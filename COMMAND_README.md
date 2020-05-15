@@ -1,3 +1,5 @@
+[TOC]
+
 # 命令接口
 
 ## 调用方法
@@ -46,7 +48,7 @@
 1. 没有返回值的命令, 直接通过 success 是否为 true 来表明命令执行结果
 2. params中的时间格式都为:  yyyy-MM-dd HH:mm:ss
 3. 返回结果中的时间都为时间戳
-4. 返回结果中只是描述了 data 数组中的单个元素的类型
+4. **返回结果中只是描述了 data 数组中的单个元素的类型**
 5. 除了**得到监控视频地址**之外的所有返回值都有 sdk 这个属性, 其内部结构为
 ```json
 {
@@ -172,7 +174,7 @@
 
 #### name 
     'accessControlStayOpen'
-    
+
 #### params
 需要常开的设备数组, 以下只显示最必要的内容, 方便调用者在不方便提供其它内容时进行调用
 ```json
@@ -193,7 +195,7 @@
 
 #### name
     'accessControlStayClose'
-    
+
 #### params
 需要常关的设备数组, 以下只显示最必要的内容, 方便调用者在不方便提供其它内容时进行调用
 ```json
@@ -715,4 +717,78 @@
 }
 ```
 
+### 得到所有的会议室
 
+    本命令不但返回会议系统中所有的会议室, 而且还返回会议室下现有的设备
+
+#### name
+    'getAllMeetingRoom'
+
+#### params
+    无需参数
+
+#### 返回数据
+
+其中devices的具体字段意思可参考[得到所有设备](#得到所有设备)
+
+```json
+{
+    id?: number; //系统内部id
+    name?: string; //会议室名称
+    location?: string; //会议室地址
+    seats?: number;  //会议室座位数
+    department?: string; //会议室所属部门
+    openStart?: string; //开放时间
+    openEnd?: string; //开放时间
+    forbiddenStart?: string; //禁止使用时间
+    forbiddenEnd?: string; //禁止使用时间
+
+    devices: Array<Device> = [ 
+        {
+            deviceId,
+            deviceName,
+            deviceType,
+            deviceTypeStr            
+        }
+    ]; 
+}
+```
+
+### 得到会议信息
+    
+#### name
+    'getMeetings'
+
+#### params
+```json
+{
+    start: ‘2020-05-14’,//查询的开始时间, 可选, 如果不填则为当天
+    end: '2020-05-14', //查询的结束时间, 可选, 如果不填则为开始时间之后的一年
+}
+```
+
+#### 返回数据
+```json
+{
+    id?: number; //会议id
+    subject?: string; //会议主题
+    startTime?: number; //开始时间
+    endTime?: number; //结束时间
+    creator?: string; //会议建立人名称
+    leaders: Array<{ name: string, avatar?: string }> = []; //主持人
+    attenders: Array<{ name: string, avatar?: string }> = []; //参会人员
+    createTime?: number; //建立时间
+    updateTime?: number; //更新时间
+    needCheckin: boolean = true; //是否需要签到
+    checkinAheadTime?: number; //提前签到时间, 分钟数
+    room?: MeetingRoom; //使用房间
+    status?: number; //状态
+    statusStr?: string; //状态文字
+    checkinList: Array<MeetingCheckinData> = [{ //会议签到情况
+        meetingId?: number; //会议id
+        name?: string; //签到人名称
+        avatar?: string; //头像
+        checkinTime?: number; //签到时间
+    }]; 
+}
+```

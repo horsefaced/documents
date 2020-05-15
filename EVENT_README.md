@@ -1,3 +1,5 @@
+[TOC]
+
 # 事件文档
 事件以消息广播的方式, 通过[Apache Artemis](https://activemq.apache.org/components/artemis/)进行.
 使用方需通过订阅事件频道来得到广播的消息. 具体的接入方式, 参考Artemis的官方网站, 选用自身合适的方式即可.
@@ -571,4 +573,78 @@
     time?: number; //报警时间
     status?: number; //状态 1-产生, 2-消失
 }
+```
+
+### 新的会议预约
+#### 频道名
+    realData.newMeeting
+#### 承载数据
+```json
+{
+    id?: number; //会议id
+    subject?: string; //会议主题
+    startTime?: number; //开始时间
+    endTime?: number; //结束时间
+    creator?: string; //会议建立人名称
+    leaders: Array<{ name: string, avatar?: string }> = []; //主持人
+    attenders: Array<{ name: string, avatar?: string }> = []; //参会人员
+    createTime?: number; //建立时间
+    updateTime?: number; //更新时间
+    needCheckin: boolean = true; //是否需要签到
+    checkinAheadTime?: number; //提前签到时间, 分钟数
+    room?: MeetingRoom; //使用房间
+    status?: number; //状态
+    statusStr?: string; //状态文字
+    checkinList: Array<MeetingCheckinData> = [{ //会议签到情况
+        meetingId?: number; //会议id
+        name?: string; //签到人名称
+        avatar?: string; //头像
+        checkinTime?: number; //签到时间
+    }]; 
+}
+```
+
+### 会议内容更新
+    如果会议内容有更新则触发
+#### 频道名
+    realData.meetingUpdate
+#### 承载数据
+```json
+{
+    id?: number; //会议id
+    subject?: string; //会议主题
+    startTime?: number; //开始时间
+    endTime?: number; //结束时间
+    creator?: string; //会议建立人名称
+    leaders: Array<{ name: string, avatar?: string }> = []; //主持人
+    attenders: Array<{ name: string, avatar?: string }> = []; //参会人员
+    createTime?: number; //建立时间
+    updateTime?: number; //更新时间
+    needCheckin: boolean = true; //是否需要签到
+    checkinAheadTime?: number; //提前签到时间, 分钟数
+    room?: MeetingRoom; //使用房间
+    status?: number; //状态
+    statusStr?: string; //状态文字
+    checkinList: Array<MeetingCheckinData> = [{ //会议签到情况
+        meetingId?: number; //会议id
+        name?: string; //签到人名称
+        avatar?: string; //头像
+        checkinTime?: number; //签到时间
+    }]; 
+}
+```
+
+### 会议签到情况更新
+#### 频道名
+    realData.checkinUpdate
+#### 承载数据
+```json
+[
+    {
+        meetingId?: number; //会议id
+        name?: string; //签到人名称
+        avatar?: string; //头像
+        checkinTime?: number; //签到时间
+    }
+]
 ```
