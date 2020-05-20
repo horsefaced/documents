@@ -648,3 +648,34 @@
     }
 ]
 ```
+
+### 智能楼宇设备的当前值
+#### 频道名
+    realData.bacPresentValue
+#### 承载数据
+```json
+{
+    deviceId?: string; //设备ID
+    value?: any;    //当前值
+    name?: string;  //值名称
+    description?: string;   //说明
+}
+```
+
+### 智能楼宇报警信息
+#### 频道名
+    realData.bacAlarm
+#### 承载数据
+```json
+{
+    id?: string;
+    deviceId?: string; //设备ID
+    value?: any;    //报警值
+    name?: string;  //报警值名称
+    priority?: number;  //报警优先级
+    type?: string; //报警类型
+    unit?: string; //报警值单位
+    time?: number; //报警时间
+    message?: string; //报警信息
+}
+```

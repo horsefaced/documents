@@ -792,3 +792,21 @@
     }]; 
 }
 ```
+
+### 得到智能楼宇的当前值
+
+#### name
+    'getAllBACPresentValues'
+
+#### params
+    没有参数
+
+#### 返回数据
+```json
+{
+    deviceId?: string; //设备ID
+    value?: any;    //当前值
+    name?: string;  //值名称
+    description?: string;   //说明 
+}
+```
