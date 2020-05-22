@@ -639,14 +639,17 @@
     realData.checkinUpdate
 #### 承载数据
 ```json
-[
-    {
-        meetingId?: number; //会议id
-        name?: string; //签到人名称
-        avatar?: string; //头像
-        checkinTime?: number; //签到时间
-    }
-]
+{
+    meetingId?: number; //会议id
+    checkinList: [
+        {
+            meetingId?: number; //会议id
+            name?: string; //签到人名称
+            avatar?: string; //头像
+            checkinTime?: number; //签到时间
+        }
+    ]
+}
 ```
 
 ### 智能楼宇设备的当前值
