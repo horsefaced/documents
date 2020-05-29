@@ -483,9 +483,11 @@
 #### 承载数据
 ```json
 {
-    deviceCode?: string; //设备编码
-    deviceName?: string; //设备名
-    isOnline?: boolean; //是否在线
+    deviceId?: string; //设备ID
+    deviceCode?: string; //设备编号
+    deviceName?: string; //设备名称
+    isOnline: boolean; //设备是否在线
+    time: number; //发生时间
 }
 ```
 
@@ -662,6 +664,7 @@
     value?: any;    //当前值
     name?: string;  //值名称
     description?: string;   //说明
+    time: number; //值的产生时间
 }
 ```
 

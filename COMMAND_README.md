@@ -122,6 +122,8 @@
     orgCode?: string; //设备组织编码, 不一定有,也不一定有用
     sn?: string; //设备sn号, 不一定有, 也不一定有用
     status?: number; //设备状态, 不一定有, 也不一有用
+    statusStr?: string; //设备状态中文说明
+    statusList: Array<{ value: number, description: string }> = []; //设备状态列表, 其中第一个就是设备的status与statusStr的值, 
 
     dataSource: string; //子系统名称,
     raw: //保存着对应厂家系统回传的原始数据
@@ -793,6 +795,19 @@
 }
 ```
 
+#### 返回数据说明
+
+status 会议状态内容为: 
+```json
+meetingStatus: {
+    "1": "会议未开始",
+    "2": "会议已取消",
+    "3": "会议进行中",
+    "4": "会议已结束",
+    "5": "会议已结束",
+}
+```
+
 ### 得到智能楼宇的当前值
 
 #### name
@@ -808,5 +823,30 @@
     value?: any;    //当前值
     name?: string;  //值名称
     description?: string;   //说明 
+    time: number; //生成值的时间
 }
 ```
+
+### 打开窗帘
+#### name
+    ‘openCurtain'
+#### params
+```json
+[
+    device: Device, //窗帘设备数组
+]
+```
+#### 返回数据
+    没有返回值
+
+### 关闭窗帘
+#### name
+    ‘closeCurtain’
+#### params
+```json
+[
+    device: Device, //窗帘设备数组
+]
+```
+#### 返回数据
+    没有返回值
