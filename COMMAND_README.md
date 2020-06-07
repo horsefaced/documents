@@ -792,7 +792,7 @@
         avatar?: string; //头像
         checkinTime?: number; //签到时间
     }]; 
-}
+}****
 ```
 
 #### 返回数据说明
@@ -850,3 +850,39 @@ meetingStatus: {
 ```
 #### 返回数据
     没有返回值
+
+### 得到消费流水
+#### name
+    'getConsumeTurnover'
+#### params
+```json
+{
+    start: string,//查询的开始时间, 可选, 如果不填则为当天之前一年
+    end: string, //查询的结束时间, 可选, 如果不填则为当天之后的一年
+}
+```
+#### 返回数据
+```json
+[
+    {
+        serialNumber?: string; //流水号
+
+        cardID?: string; //交易卡号
+        personName?: string; //姓名
+        personDepartment?: string; //人员所在部门
+
+        dealerID?: string; //商户号
+        dealerName?: string; //商户名称
+
+        terminalID?: string; //交易终端号
+
+        dealType?: number; //交易类型
+        dealTypeStr?: string; //交易类型名称
+
+        paid?: number; //交易金额    
+
+        time?: number; //交易时间
+        bookTime?: number; //入账时间
+    }
+]
+```

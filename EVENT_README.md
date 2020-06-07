@@ -685,3 +685,30 @@
     message?: string; //报警信息
 }
 ```
+
+### 消费流水数据
+#### 频道名
+    realData.consumeTurnover
+#### 承载数据
+```json
+{
+    serialNumber?: string; //流水号
+
+    cardID?: string; //交易卡号
+    personName?: string; //姓名
+    personDepartment?: string; //人员所在部门
+
+    dealerID?: string; //商户号
+    dealerName?: string; //商户名称
+
+    terminalID?: string; //交易终端号
+
+    dealType?: number; //交易类型
+    dealTypeStr?: string; //交易类型名称
+
+    paid?: number; //交易金额    
+
+    time?: number; //交易时间
+    bookTime?: number; //入账时间 
+}
+```
