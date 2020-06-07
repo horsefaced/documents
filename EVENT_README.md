@@ -703,7 +703,7 @@
 
     terminalID?: string; //交易终端号
 
-    dealType?: number; //交易类型
+    dealType?: number; //交易类型 1: '消费', 2: '充值', 3: '补助',
     dealTypeStr?: string; //交易类型名称
 
     paid?: number; //交易金额    
