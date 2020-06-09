@@ -65,7 +65,8 @@
 
     enterOrExit?: number; //刷卡是出还是入
     openResult?: boolean;   //开门结果
-    openType?: string; //开门类型
+    openType?: number; //开门类型
+    openTypeStr?: string; //开门类型说明
 
     personId?: number; //人员ID
     personName?: string; //人员名称
@@ -694,7 +695,7 @@
 {
     serialNumber?: string; //流水号
 
-    cardID?: string; //交易卡号
+    cardNumber?: string; //交易卡号
     personName?: string; //姓名
     personDepartment?: string; //人员所在部门
 
