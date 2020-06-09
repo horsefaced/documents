@@ -738,7 +738,9 @@
 {
     id?: number; //系统内部id
     name?: string; //会议室名称
-    location?: string; //会议室地址
+    floor?: string; // 会议室所在楼层
+    buildingName: string; //会议室所在建筑名称
+    parkName: string: //会议室所在园区
     seats?: number;  //会议室座位数
     department?: string; //会议室所属部门
     openStart?: string; //开放时间
@@ -784,7 +786,7 @@
     updateTime?: number; //更新时间
     needCheckin: boolean = true; //是否需要签到
     checkinAheadTime?: number; //提前签到时间, 分钟数
-    room?: MeetingRoom; //使用房间
+    room?: MeetingRoom; //使用房间, 参考得到会议室返回的数据
     status?: number; //状态
     statusStr?: string; //状态文字
     checkinList: Array<MeetingCheckinData> = [{ //会议签到情况

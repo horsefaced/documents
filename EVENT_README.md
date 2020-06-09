@@ -595,7 +595,7 @@
     updateTime?: number; //更新时间
     needCheckin: boolean = true; //是否需要签到
     checkinAheadTime?: number; //提前签到时间, 分钟数
-    room?: MeetingRoom; //使用房间
+    room?: MeetingRoom; //使用房间, 参考命令文档中得到会议室命令
     status?: number; //状态
     statusStr?: string; //状态文字
     checkinList: Array<MeetingCheckinData> = [{ //会议签到情况
@@ -625,7 +625,7 @@
     updateTime?: number; //更新时间
     needCheckin: boolean = true; //是否需要签到
     checkinAheadTime?: number; //提前签到时间, 分钟数
-    room?: MeetingRoom; //使用房间
+    room?: MeetingRoom; //使用房间, 参考命令文档中得到会议室命令
     status?: number; //状态
     statusStr?: string; //状态文字
     checkinList: Array<MeetingCheckinData> = [{ //会议签到情况
