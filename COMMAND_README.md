@@ -41,7 +41,8 @@
       msg: string, //错误信息
   }]
 }
-```    
+```
+    
 
 ## 命令列表
 
@@ -133,7 +134,7 @@
 ### 门禁开门
 
 #### name
-    'accessControlOpenDoor'
+    'openDoor'
 
 #### params
 需要开门的设备数组, 以下只显示最必要的内容, 方便调用者在不方便提供其它内容时进行调用
@@ -154,7 +155,7 @@
 ### 门禁关门
 
 #### name
-    'accessControlCloseDoor'
+    'closeDoor'
 
 #### params
 需要关门的设备数组, 以下只显示最必要的内容, 方便调用者在不方便提供其它内容时进行调用
@@ -175,7 +176,7 @@
 ### 门禁常开
 
 #### name 
-    'accessControlStayOpen'
+    'doorStayOpen'
 
 #### params
 需要常开的设备数组, 以下只显示最必要的内容, 方便调用者在不方便提供其它内容时进行调用
@@ -196,7 +197,7 @@
 ### 门禁常关
 
 #### name
-    'accessControlStayClose'
+    'doorStayClose'
 
 #### params
 需要常关的设备数组, 以下只显示最必要的内容, 方便调用者在不方便提供其它内容时进行调用
@@ -308,7 +309,7 @@
 针对可视对讲设备的开门命令
 
 #### name
-    'vimsOpenDoor'
+    'openDoor'
 
 #### params
 需要开门的设备, 以下只显示最必要的内容, 方便调用者在不方便提供其它内容时进行调用

@@ -36,4 +36,50 @@
 ### 命令列表
 1. consumeTurnover 消费流水推送
 
+## 安防系统
+### 命令列表
+1. getAllDevices 得到所有安防设备, 包括摄像头、报警器、门禁、道闸等
+2. alarmQueryHistoryRecord 查询整个安防系统的报警历史记录
+3. faceDetectionHistoryRecord 人脸检测记录查询
+4. faceRecognitionRecord 人脸识别记录查询
+5. facePersonFeatureecord 人体特征记录查询
+6. carFeatureRecord 车辆特征记录查询
+7. nonmotoFeatureRecord 非机动车特征记录查询
+8. faceSearch 以图搜图, 非常的慢, 非必要不要调用
+
+### 事件列表
+1. faceDetect
+2. faceRecognition
+3. personFeature
+4. carFeature
+5. nonmotorFeature
+6. deviceOnlineStatusChange 
+7. deviceAlarm 设备报警, 推荐直接显示 alarmTypeStr 的内容
+
+## 门禁系统
+### 命令列表
+1. getAllDevices 得到所有门禁、包括普通门禁、人脸门禁
+2. openDoor 
+3. closeDoor
+4. doorStayOpen
+5. doorStayClose
+6. accessControlQuerySwipeCardRecord 门禁刷卡记录
+7. accessControlQueryAuthorizeRecord 门禁认证记录
+
+### 事件列表
+1. swipeCard 刷卡事件
+2. authorRecord 认证记录
+
+## 可视对讲系统管理
+### 命令列表
+1. getAllDevices 得到所有可视对讲设备
+2. openDoor
+3. vimsQueryAlarmRecord 可视对讲报警记录
+4. vimsQueryOpenDoorRecord 可视对讲开门记录
+
+### 事件列表
+暂时没有
+
+
+
 

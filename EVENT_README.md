@@ -478,9 +478,9 @@
 }
 ```
 
-### 设备状态
+### 设备在线状态
 #### 频道名
-    realData.deviceStatusChange
+    realData.deviceOnlineStatusChange
 #### 承载数据
 ```json
 {
@@ -505,6 +505,7 @@
     videoChannelId?: string; //视频通道号
     videoChannelName?: string; //视频通道名称
     alarmType?: string; //报警类型
+    alarmTypeStr?: string; //报警类型说明
     time?:number; //报警时间
     alarmCode?: string; //报警编码, 内部使用
     status?: number; //报警状态, 1-报警产生, 2-报警消失
