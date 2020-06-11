@@ -80,6 +80,14 @@
 ### 事件列表
 暂时没有
 
+## 访客系统
+访客系统的设备现在阶段和门禁系统公用一个设备, 所以设备列表通过门禁系统就可以得到
+### 命令列表
+1. getVisitorRecords
+2. getVisitorSwipeCardRecords
+
+### 事件列表
+1. swipeCard 刷卡事件与门禁系统的刷卡事件共享, 通过cardType来进行区分
 
 
 

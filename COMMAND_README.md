@@ -231,10 +231,12 @@
 #### 返回数据
 ```json
 {
-    recordId?: number;  //设备ID
+    recordId?: number;  //记录ID
     cardNumber?: string;  //卡号
     cardStatus?: number;   //卡状态
-    cardType?: string;     //卡类型
+    cardStatusStr?: string; //卡状态说明
+    cardType?: number;     //卡类型
+    cardTypeStr?: string; //卡类型说明
 
     channelId?: string;    //刷卡设备通道号
     channelName?: string;   //刷卡设备通道名称
@@ -392,7 +394,8 @@
     deviceName?: string; //设备名称
 
     openResult?: boolean; //开门结果
-    openType?: string; //开门类型
+    openType?: number; //开门类型
+    openTypStr?: string; //开门类型说明
 
     personId?: string; //刷卡人id
     personName?: string; //刷卡人名称
@@ -887,6 +890,79 @@ meetingStatus: {
 
         time?: number; //交易时间
         bookTime?: number; //入账时间
+    }
+]
+```
+
+### 得到访客列表
+#### name
+getVisitorRecords
+#### 返回数据
+```json
+[
+    {
+    personName?: string; //访客名称
+    sex?: string; //性别
+    phone?: string; //电话号码
+    department?: string; //访客单位
+
+    plateNumber?: string; //访客车牌号
+
+    paperNumber?: string;   //访客证件号码
+    paperType?: string; //访客证件类型
+    paperImage?: string; //证件照片
+
+    reason?: string; //访问原因
+
+    bookTime?: number;  //预约时间
+    bookLeaveTime?: number; //预约离开时间
+    realTime?: number;//实际到达时间 
+    realLeaveTime?: number; //实际离开时间
+
+    image?: string; //证件头像
+    snapImage?: string; //抓拍图片
+
+    cardNumber?: string; //访客卡号
+
+    respondentId?: string; //被访人ID
+    respondentName?: string; //被访人名称
+    respondentCode?: string; //被访人编号
+
+    numberOfVisitor?: number; //访问人数
+
+    status?: number; //访客状态
+    statusStr?: string; //访客状态说明,0: '待审批',1: '预约',2: '来访',3: '离访',4: '预约取消',
+
+    appointmentCode?: string; //预约码
+    }
+]
+```
+
+### 得到访客刷卡记录
+#### name
+getVisitorSwipeCardRecords
+#### 返回数据
+```json
+[
+    {
+    cardNumber?: string;  //卡号
+    cardStatus?: number;   //卡状态
+    cardStatusStr?: string; //卡状态说明
+    cardType?: number;     //卡类型
+    cardTypeStr?: string; //卡类型说明
+
+    channelId?: string;    //刷卡设备通道号
+    channelName?: string;   //刷卡设备通道名称
+
+    deviceCode?: string;  //设备编码
+    deviceName?: string;  //设备名称
+
+    enterOrExit?: number; //刷卡是出还是入, 1: 进门, 2:出门
+    openResult?: boolean;   //开门结果
+    openType?: number; //开门类型
+    openTypeStr?: string; //开门类型说明
+
+    time?: number;  //刷卡时间
     }
 ]
 ```

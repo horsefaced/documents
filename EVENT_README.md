@@ -52,7 +52,9 @@
     recordId?: number;  //设备ID
     cardNumber?: string;  //卡号
     cardStatus?: number;   //卡状态
+    cardStatusStr?: string; //卡状态说明,   0: '激活',1: '空白',2: '冻结',3: '注销',
     cardType?: number;     //卡类型
+    cardTypeStr?: string; //卡类型说明, 0: '普通卡',1: 'VIP卡',2: '来宾卡',3: '巡逻卡',5: '胁迫卡',6: '巡检卡', 11: '管理员卡',
 
     channelId?: string;    //刷卡设备通道号
     channelName?: string;   //刷卡设备通道名称
@@ -63,7 +65,7 @@
     deviceCode?: string;  //设备编码
     deviceName?: string;  //设备名称
 
-    enterOrExit?: number; //刷卡是出还是入
+    enterOrExit?: number; //刷卡是出还是入, 1: 进门, 2:出门
     openResult?: boolean;   //开门结果
     openType?: number; //开门类型
     openTypeStr?: string; //开门类型说明
@@ -118,7 +120,8 @@
 
     numberOfVisitor?: number; //访问人数
 
-    status?: string; //访客状态
+    status?: number; //访客状态
+    statusStr?: string; //访客状态说明,0: '待审批',1: '预约',2: '来访',3: '离访',4: '预约取消',
 
     appointmentCode?: string; //预约码
 }
