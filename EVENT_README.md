@@ -717,3 +717,20 @@
     bookTime?: number; //入账时间 
 }
 ```
+
+### 客流数据
+#### 频道名
+    realData.passengerFlow
+#### 承载数据
+```json
+{
+    id?: string; //区域ID
+    regionCode?: string; //区域编码
+    regionName?: string; //区域名称
+    toDayOutNumber?: number; //当天出去人数
+    toDayEnterNumber?: number; //当天进入人数
+    realTimeNumber?: number; //实时人数
+    upperLimit?: number; //人数上限
+    updateTime?: number; //数据更新时间
+}
+```

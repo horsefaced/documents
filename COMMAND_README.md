@@ -897,6 +897,8 @@ meetingStatus: {
 ### 得到访客列表
 #### name
 getVisitorRecords
+#### params
+没有参数
 #### 返回数据
 ```json
 [
@@ -941,6 +943,13 @@ getVisitorRecords
 ### 得到访客刷卡记录
 #### name
 getVisitorSwipeCardRecords
+#### params
+```json
+{
+    start: string; //查询开始时间, 可选, 如果不填则为当天
+    end: string; //结束时间, 可选, 如果不填则为当天
+}
+```
 #### 返回数据
 ```json
 [
@@ -957,6 +966,8 @@ getVisitorSwipeCardRecords
     deviceCode?: string;  //设备编码
     deviceName?: string;  //设备名称
 
+    personName?: string; // 访客姓名, 通过访客姓名, 用户可以与访客列表中的访客数据进行比对.
+
     enterOrExit?: number; //刷卡是出还是入, 1: 进门, 2:出门
     openResult?: boolean;   //开门结果
     openType?: number; //开门类型
@@ -966,3 +977,25 @@ getVisitorSwipeCardRecords
     }
 ]
 ```
+
+### 得到客流统计区域
+#### name
+getPassengerFlowRegion
+#### params
+没有参数
+#### 返回数据
+```json
+[
+    {
+        id?: string; //区域ID
+        regionCode?: string; //区域编码
+        regionName?: string; //区域名称
+        toDayOutNumber?: number; //当天出去人数
+        toDayEnterNumber?: number; //当天进入人数
+        realTimeNumber?: number; //实时人数
+        upperLimit?: number; //人数上限
+        updateTime?: number; //数据更新时间
+    }
+]
+```
+
