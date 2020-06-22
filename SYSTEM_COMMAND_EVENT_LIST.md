@@ -5,10 +5,14 @@
 ### 命令列表
 1. getAllMeetingRoom 
 2. getMeetings
+3. getAllDevices
+4. turnOnLight
+5. turnOffLight
 ### 事件列表
 1. newMeeting
 2. meetingUpdate
 3. chechinUpdate
+4. meetingAgenda 会议议程通知, 当某个会议进行到一个新的议程的时间点前发出
 
 ## 智能窗帘系统
 ### 命令列表

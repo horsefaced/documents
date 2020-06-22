@@ -608,6 +608,13 @@
         avatar?: string; //头像
         checkinTime?: number; //签到时间
     }]; 
+    agenda: [{
+        meetingId?: number; //会议id
+        subject?: string; //会议议程主题
+        time?: number; //开始时间
+        leader?: { name: string, avatar?: string }; //主持人
+        attenders: Array<{ name: string, avatar?: string }> = []; //参会人员
+    }];
 }
 ```
 
@@ -638,6 +645,13 @@
         avatar?: string; //头像
         checkinTime?: number; //签到时间
     }]; 
+    agenda: [{
+        meetingId?: number; //会议id
+        subject?: string; //会议议程主题
+        time?: number; //开始时间
+        leader?: { name: string, avatar?: string }; //主持人
+        attenders: Array<{ name: string, avatar?: string }> = []; //参会人员
+    }];
 }
 ```
 
@@ -656,6 +670,20 @@
             checkinTime?: number; //签到时间
         }
     ]
+}
+```
+
+### 会议议程通知
+#### 频道名
+    realData.meetingAgenda
+#### 承载数据
+```json
+{
+    meetingId?: number; //会议id
+    subject?: string; //会议议程主题
+    time?: number; //开始时间
+    leader?: { name: string, avatar?: string }; //主持人
+    attenders: Array<{ name: string, avatar?: string }> = []; //参会人员    
 }
 ```
 

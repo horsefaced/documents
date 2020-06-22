@@ -799,20 +799,27 @@
         avatar?: string; //头像
         checkinTime?: number; //签到时间
     }]; 
-}****
+    agenda: [{
+        meetingId?: number; //会议id
+        subject?: string; //会议议程主题
+        time?: number; //开始时间
+        leader?: { name: string, avatar?: string }; //主持人
+        attenders: Array<{ name: string, avatar?: string }> = []; //参会人员
+    }];
+}
 ```
 
 #### 返回数据说明
 
 status 会议状态内容为: 
 ```json
-meetingStatus: {
-    "1": "会议未开始",
-    "2": "会议已取消",
-    "3": "会议进行中",
-    "4": "会议已结束",
-    "5": "会议已结束",
-}
+    meetingStatus: {
+        "1": "会议未开始",
+        "2": "会议已取消",
+        "3": "会议进行中",
+        "4": "会议已结束",
+        "5": "会议已结束",
+    }
 ```
 
 ### 得到智能楼宇的当前值
