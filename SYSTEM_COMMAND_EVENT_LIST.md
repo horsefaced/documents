@@ -2,6 +2,12 @@
 本文档解释了现有个采集系统实现的命令列表, 供对接参考使用
 
 ## 会议系统
+### 现有的平台
+```json
+[
+    { sdk: { manufacturer: 'itc', platform: 'cloud' } },
+]
+```
 ### 命令列表
 1. getAllMeetingRoom 
 2. getMeetings
@@ -15,6 +21,12 @@
 4. meetingAgenda 会议议程通知, 当某个会议进行到一个新的议程的时间点前发出
 
 ## 智能窗帘系统
+### 现有平台
+```json
+[
+    { sdk: { manufacturer: 'lifesmart', platform: 'ToB' } },
+]
+```
 ### 命令列表
 1. getAllDevices 得到当前智能窗帘控制器设备列表
 2. getAllBACPresentValue 得到所有窗帘控制器设备的当前状态, 1:打开、0.5:半开、0:关闭、-1:未知
@@ -25,6 +37,12 @@
 1. bacPresentValue 窗帘控制器设备的当前状态
 
 ## 暖通系统
+### 现有平台
+```json
+[
+    { sdk: { manufacturer: 'metasys', platform: 'metasys' } },
+]
+```
 ### 命令列表
 1. getAllDevices
 2. getAllBACPresentValue 得到暖通设备的当前值, 根据不同设备有不同的值, 比如温度、转速等, 只要直接显示就可以了
@@ -41,6 +59,12 @@
 1. consumeTurnover 消费流水推送
 
 ## 安防系统
+### 现有平台
+```json
+[
+    { sdk: { manufacturer: 'dahua', platform: 'H8900' } },
+]
+```
 ### 命令列表
 1. getAllDevices 得到所有安防设备, 包括摄像头、报警器、门禁、道闸等
 2. alarmQueryHistoryRecord 查询整个安防系统的报警历史记录
@@ -61,6 +85,12 @@
 7. deviceAlarm 设备报警, 推荐直接显示 alarmTypeStr 的内容
 
 ## 门禁系统
+### 现有平台
+```json
+[
+    { sdk: { manufacturer: 'dahua', platform: 'H8900' } },
+]
+```
 ### 命令列表
 1. getAllDevices 得到所有门禁、包括普通门禁、人脸门禁
 2. openDoor 
@@ -75,6 +105,12 @@
 2. authorRecord 认证记录
 
 ## 可视对讲系统管理
+### 现有平台
+```json
+[
+    { sdk: { manufacturer: 'dahua', platform: 'H8900' } },
+]
+```
 ### 命令列表
 1. getAllDevices 得到所有可视对讲设备
 2. openDoor
@@ -94,6 +130,12 @@
 1. swipeCard 刷卡事件与门禁系统的刷卡事件共享, 通过cardType来进行区分
 
 ## 客流统计系统
+### 现有平台
+```json
+[
+    { sdk: { manufacturer: 'dahua', platform: 'H8900' } },
+]
+```
 客流统计系统返回不同区域的实时客流情况
 ### 命令列表
 1. getPassengeFlowRegions 得到客流区域的数据中就有当前客流的数据, 但不推荐使用者频繁刷新这个, 系统有提供事件让使用者得到实时客流数据

@@ -13,3 +13,6 @@
 ## 事件部分
 
 参考[事件文档](EVENT_README.md)
+
+## 常量定义说明
+参考[常量的说明](CONSTANTS_README.md)
