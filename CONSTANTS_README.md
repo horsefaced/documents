@@ -103,7 +103,7 @@ itc会议系统的设备的大类与类型是一样的
 ```
 ##### 设备类型(deviceType)
 其deviceType为对象的字段名称, description为deviceTypeStr 
-```json
+```javascript
     {
     'SL_OL': { description: '智慧插座', category: '插座', },
     'SL_OL_3C': { description: '智慧插座', category: '插座', },
