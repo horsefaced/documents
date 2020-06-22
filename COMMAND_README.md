@@ -822,6 +822,31 @@ status 会议状态内容为:
     }
 ```
 
+### 开灯
+#### name
+    'turnOnLight'
+#### params
+```json
+[
+    device: Device, //灯光设备数组
+]
+```
+#### 返回数据
+    没有返回值
+
+### 关灯
+#### name
+    'turnOffLight'
+#### params
+```json
+[
+    device: Device, //灯光设备数组
+]
+```
+#### 返回数据
+    没有返回值
+
+
 ### 得到智能楼宇的当前值
 
 #### name
