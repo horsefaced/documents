@@ -12,7 +12,7 @@
     log
 
 #### 承载数据
-```json
+```javascript
 {
     message?:string; //消息内容
     level?: string; //消息类型, 现有 info, warning, fatal, 其中warning为普通的错误信息, fatal表示发生了让采集系统无法继续运行的错误, 需要尽快排查
@@ -27,7 +27,7 @@
 
 #### 承载数据
 承载的数据都为json格式, 其中都含有如下属性, 其余的内容参考下面的具体实时数据说明.
-```json
+```javascript
 {
     sdk: {
         manufacturer?: string, //厂商名称, 如“dahua”等
@@ -47,7 +47,7 @@
     realData.swipeCard
 
 #### 承载数据
-```json
+```javascript
 {
     recordId?: number;  //设备ID
     cardNumber?: string;  //卡号
@@ -89,7 +89,7 @@
 #### 频道名
     realData.visitorCheck
 #### 承载数据
-```json
+```javascript
 {
     personName?:string; //访客名称
     sex?: string; //性别
@@ -131,7 +131,7 @@
 #### 频道名
     realData.attendanceResult
 #### 承载数据
-```json
+```javascript
 {
     personId?: string; //用户ID
     personCode?: string;    //人员编号
@@ -151,7 +151,7 @@
 #### 频道名
     realData.patrolPoint
 #### 承载数据
-```json
+```javascript
 {
     recordId?: string; //记录ID
 
@@ -192,7 +192,7 @@
 #### 频道名
     realData.patrolRouter
 #### 承载数据
-```json
+```javascript
 {
     routeId?: number; //路线ID
     routeName?: string; //路线名称
@@ -226,7 +226,7 @@
 #### 频道名
     realData.carCapture
 #### 承载数据
-```json
+```javascript
 {
     direct?: string; //行车方向, 
     time?: number; //抓拍时间
@@ -249,7 +249,7 @@
 #### 频道名
     realData.carAccess
 #### 承载数据
-```json
+```javascript
 {
      plateNumber?: string; //车牌号
     personId?: number; //人员ID
@@ -288,7 +288,7 @@
 #### 频道名
     realData.payment
 #### 承载数据
-```json
+```javascript
 {
         time?: number; //消费时间
     receivable?: number;//应收金额
@@ -318,7 +318,7 @@
 #### 频道名
     realData.faceDetect
 #### 承载数据
-```json
+```javascript
 {
         recordId?: string; //记录ID
     time?: number; //记录时间
@@ -342,7 +342,7 @@
 #### 频道名
     realData.faceRecognition
 #### 承载数据
-```json
+```javascript
 {
         paperNumber?: string; //证件号
     paperType?: string;//证件类型
@@ -375,7 +375,7 @@
 #### 频道名
     realData.personFeature
 #### 承载数据
-```json
+```javascript
 {
         recordId?: string; //记录ID
     image?: string; //人脸图片
@@ -414,7 +414,7 @@
 #### 频道名
     realData.carFeature
 #### 承载数据
-```json
+```javascript
 {
     plateNumber?: string; //车牌号
     plateImage?: string; //车牌图片
@@ -443,7 +443,7 @@
 #### 频道名
     realData.nonmotorFeature
 #### 承载数据
-```json
+```javascript
 {
     image?: string; //抓拍图片
     featureImages: Array<string> = []; //图片扩展
@@ -485,7 +485,7 @@
 #### 频道名
     realData.deviceOnlineStatusChange
 #### 承载数据
-```json
+```javascript
 {
     deviceId?: string; //设备ID
     deviceCode?: string; //设备编号
@@ -499,7 +499,7 @@
 #### 频道名
     realData.deviceAlarm
 #### 承载数据
-```json
+```javascript
 {
     deviceCode?: string; //设备编号
     deviceName?: string; //设备名
@@ -521,7 +521,7 @@
 #### 频道名
     realData.authorRecord
 #### 承载数据
-```json
+```javascript
 {
     personName?: string; //人员名称
     age?: number; //年龄
@@ -549,7 +549,7 @@
 #### 频道名
     realData.envirMonitor
 #### 承载数据
-```json
+```javascript
 {
     FSUDeviceCode?: string; //现场检测单元设备编码
     FSUChannelId?: string; //现场检测单元通道号
@@ -570,7 +570,7 @@
 #### 频道名
     realData.pessAlarm
 #### 承载数据
-```json
+```javascript
 {
     deviceCode?: string; //设备编码
     deviceName?: string; //设备名称
@@ -586,7 +586,7 @@
 #### 频道名
     realData.newMeeting
 #### 承载数据
-```json
+```javascript
 {
     id?: number; //会议id
     subject?: string; //会议主题
@@ -623,7 +623,7 @@
 #### 频道名
     realData.meetingUpdate
 #### 承载数据
-```json
+```javascript
 {
     id?: number; //会议id
     subject?: string; //会议主题
@@ -659,7 +659,7 @@
 #### 频道名
     realData.checkinUpdate
 #### 承载数据
-```json
+```javascript
 {
     meetingId?: number; //会议id
     checkinList: [
@@ -677,7 +677,7 @@
 #### 频道名
     realData.meetingAgenda
 #### 承载数据
-```json
+```javascript
 {
     meetingId?: number; //会议id
     subject?: string; //会议议程主题
@@ -691,7 +691,7 @@
 #### 频道名
     realData.bacPresentValue
 #### 承载数据
-```json
+```javascript
 {
     deviceId?: string; //设备ID
     value?: any;    //当前值
@@ -705,7 +705,7 @@
 #### 频道名
     realData.bacAlarm
 #### 承载数据
-```json
+```javascript
 {
     id?: string;
     deviceId?: string; //设备ID
@@ -723,7 +723,7 @@
 #### 频道名
     realData.consumeTurnover
 #### 承载数据
-```json
+```javascript
 {
     serialNumber?: string; //流水号
 
@@ -750,7 +750,7 @@
 #### 频道名
     realData.passengerFlow
 #### 承载数据
-```json
+```javascript
 {
     id?: string; //区域ID
     regionCode?: string; //区域编码

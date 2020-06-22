@@ -10,7 +10,7 @@
 - URL: ```http://ip:port/command```
 - Headers: Content-Type: application/json
 - Body: 
-```json
+```javascript
     {
         id: string, //命令的唯一ID, 由调用者生成, 用于区别每次请求的命令
         name: string, //命令名, 本次需要执行的命令名称
@@ -21,7 +21,7 @@
 #### Response
 - Body: 
 
-```json
+```javascript
 {
   id: string, //执行的命令id
   name: string, //执行的命令名
@@ -51,7 +51,7 @@
 3. 返回结果中的时间都为时间戳
 4. **返回结果中只是描述了 data 数组中的单个元素的类型**
 5. 除了**得到监控视频地址**之外的所有返回值都有 sdk 这个属性, 其内部结构为
-```json
+```javascript
 {
     manufacturer: 'dahua', //厂商名称, 表明数据提供厂商, 现有'dahua'
     platform: 'h8900', //厂商SDK的名称
@@ -65,7 +65,7 @@
 
 #### params
 需要得到视频地址的设备列表, 下面只列出必要的参数
-```json
+```javascript
 {
     mainStream: boolean; //是否取主流, 如果为false, 或者为空, 则取副流
     type: 'rtsp'; //支持rtsp和hls两种格式, 默认是rtsp
@@ -81,7 +81,7 @@
 ```
 
 #### 返回数据
-```json
+```javascript
 {
     channelId: string; //通道号
     source: string; //视频流地址
@@ -100,7 +100,7 @@
 
 #### 返回数据
 会返回得到的所有设备的数组
-```json
+```javascript
 {
     deviceId?: String; //设备ID,
     deviceName?: String; //设备名称, 
@@ -138,7 +138,7 @@
 
 #### params
 需要开门的设备数组, 以下只显示最必要的内容, 方便调用者在不方便提供其它内容时进行调用
-```json
+```javascript
 [{
     channels: [{                //设备通道号列表
         id?: string; //通道号
@@ -159,7 +159,7 @@
 
 #### params
 需要关门的设备数组, 以下只显示最必要的内容, 方便调用者在不方便提供其它内容时进行调用
-```json
+```javascript
 [{
     channels: [{                //设备通道号列表
         id?: string; //通道号
@@ -180,7 +180,7 @@
 
 #### params
 需要常开的设备数组, 以下只显示最必要的内容, 方便调用者在不方便提供其它内容时进行调用
-```json
+```javascript
 [{
     channels: [{                //设备通道号列表
         id?: string; //通道号
@@ -201,7 +201,7 @@
 
 #### params
 需要常关的设备数组, 以下只显示最必要的内容, 方便调用者在不方便提供其它内容时进行调用
-```json
+```javascript
 [{
     channels: [{                //设备通道号列表
         id?: string; //通道号
@@ -221,7 +221,7 @@
     'accessControlQuerySwipeCardRecord'
 
 #### params
-```json
+```javascript
 {
     start: string; //查询的开始时间
     end: string; //查询结束时间
@@ -229,7 +229,7 @@
 ```
 
 #### 返回数据
-```json
+```javascript
 {
     recordId?: number;  //记录ID
     cardNumber?: string;  //卡号
@@ -277,7 +277,7 @@
     'accessControlQueryAuthorizeRecord'
 
 #### params
-```json
+```javascript
 {
     start: string; //查询的开始时间
     end: string; //查询结束时间
@@ -285,7 +285,7 @@
 ```
 
 #### 返回数据
-```json
+```javascript
 {
     recordId?: string;  //记录ID
     personName?: string; //人员名称
@@ -315,7 +315,7 @@
 
 #### params
 需要开门的设备, 以下只显示最必要的内容, 方便调用者在不方便提供其它内容时进行调用
-```json
+```javascript
 {
     channels: [{                //设备通道号列表
         id?: string; //通道号
@@ -335,7 +335,7 @@
     'vimsQueryAlarmRecord'
 
 #### params
-```json
+```javascript
 {
     start: string; //开始时间
     end: string; //结束时间
@@ -343,7 +343,7 @@
 ```
 
 #### 返回数据
-```json
+```javascript
 {
     recordId?: string;  //记录ID
     time?: number;  //报警时间
@@ -373,7 +373,7 @@
     'vimsQueryOpenDoorRecord'
 
 #### params
-```json
+```javascript
 {
     start: string; //开始时间
     end: string; //结束时间
@@ -381,7 +381,7 @@
 ```
 
 #### 返回数据
-```json
+```javascript
 {
     recordId?: string; //记录ID
     cardNumber?: string; //卡号
@@ -413,7 +413,7 @@
     'alarmQueryHistoryRecord'
 
 #### params
-```json
+```javascript
 {
     start: string; //开始时间
     end: string; //结束时间
@@ -421,7 +421,7 @@
 ```
 
 #### 返回数据
-```json
+```javascript
 {    
     recordId?: string; //记录ID
     grade?: number; //报警级别
@@ -445,7 +445,7 @@
     'faceDetectionHistoryRecord'
 
 #### params
-```json
+```javascript
 {
     start: string; //开始时间
     end: string; //结束时间
@@ -453,7 +453,7 @@
 ```
 
 #### 返回数据
-```json
+```javascript
 {
     recordId?:string; //记录ID
     time?: number; //记录时间
@@ -482,7 +482,7 @@
     'faceRecognitionRecord'
 
 #### params
-```json
+```javascript
 {
     start: string; //开始时间
     end: string; //结束时间
@@ -490,7 +490,7 @@
 ```
 
 #### 返回数据
-```json
+```javascript
 {
     paperNumber?: string; //证件号
     paperType?: string;//证件类型
@@ -528,7 +528,7 @@
     'facePersonFeatureRecord',
 
 #### params
-```json
+```javascript
 {
     start: string; //开始时间
     end: string; //结束时间
@@ -536,7 +536,7 @@
 ```
 
 #### 返回数据
-```json
+```javascript
 {
     recordId?: string; //记录ID
     image?: string; //人脸图片
@@ -580,7 +580,7 @@
     'carFeatureRecord'
 
 #### params
-```json
+```javascript
 {
     start: string; //开始时间
     end: string; //结束时间
@@ -588,7 +588,7 @@
 ```
 
 #### 返回数据
-```json
+```javascript
 {
     recordId?: string; //记录ID
 
@@ -623,7 +623,7 @@
     'nonmotorFeatureRecord'
 
 #### params
-```json
+```javascript
 {
     start: string; //开始时间
     end: string; //结束时间
@@ -631,7 +631,7 @@
 ```
 
 #### 返回数据
-```json
+```javascript
 {
     recordId?: string; //记录ID
 
@@ -679,7 +679,7 @@
     'faceSearch'
 
 #### params
-```json
+```javascript
 {
     image: string, //base64格式的图片,
     threshold: number, //期望的阈值, 推荐不传, 系统会用默认的,
@@ -689,7 +689,7 @@
 ```
 
 #### 返回数据
-```json
+```javascript
 {
     paperNumber?: string; //证件号
 
@@ -738,7 +738,7 @@
 
 其中devices的具体字段意思可参考[得到所有设备](#得到所有设备)
 
-```json
+```javascript
 {
     id?: number; //系统内部id
     name?: string; //会议室名称
@@ -769,7 +769,7 @@
     'getMeetings'
 
 #### params
-```json
+```javascript
 {
     start: string,//查询的开始时间, 可选, 如果不填则为当天
     end: string, //查询的结束时间, 可选, 如果不填则为开始时间之后的一年
@@ -777,7 +777,7 @@
 ```
 
 #### 返回数据
-```json
+```javascript
 {
     id?: number; //会议id
     subject?: string; //会议主题
@@ -812,7 +812,7 @@
 #### 返回数据说明
 
 status 会议状态内容为: 
-```json
+```javascript
     meetingStatus: {
         "1": "会议未开始",
         "2": "会议已取消",
@@ -826,7 +826,7 @@ status 会议状态内容为:
 #### name
     'turnOnLight'
 #### params
-```json
+```javascript
 [
     device: Device, //灯光设备数组
 ]
@@ -838,7 +838,7 @@ status 会议状态内容为:
 #### name
     'turnOffLight'
 #### params
-```json
+```javascript
 [
     device: Device, //灯光设备数组
 ]
@@ -856,7 +856,7 @@ status 会议状态内容为:
     没有参数
 
 #### 返回数据
-```json
+```javascript
 {
     deviceId?: string; //设备ID
     value?: any;    //当前值
@@ -870,7 +870,7 @@ status 会议状态内容为:
 #### name
     ‘openCurtain'
 #### params
-```json
+```javascript
 [
     device: Device, //窗帘设备数组
 ]
@@ -882,7 +882,7 @@ status 会议状态内容为:
 #### name
     ‘closeCurtain’
 #### params
-```json
+```javascript
 [
     device: Device, //窗帘设备数组
 ]
@@ -894,14 +894,14 @@ status 会议状态内容为:
 #### name
     'getConsumeTurnover'
 #### params
-```json
+```javascript
 {
     start: string,//查询的开始时间, 可选, 如果不填则为当天之前一年
     end: string, //查询的结束时间, 可选, 如果不填则为当天之后的一年
 }
 ```
 #### 返回数据
-```json
+```javascript
 [
     {
         serialNumber?: string; //流水号
@@ -932,7 +932,7 @@ getVisitorRecords
 #### params
 没有参数
 #### 返回数据
-```json
+```javascript
 [
     {
     personName?: string; //访客名称
@@ -976,14 +976,14 @@ getVisitorRecords
 #### name
 getVisitorSwipeCardRecords
 #### params
-```json
+```javascript
 {
     start: string; //查询开始时间, 可选, 如果不填则为当天
     end: string; //结束时间, 可选, 如果不填则为当天
 }
 ```
 #### 返回数据
-```json
+```javascript
 [
     {
     cardNumber?: string;  //卡号
@@ -1016,7 +1016,7 @@ getPassengerFlowRegion
 #### params
 没有参数
 #### 返回数据
-```json
+```javascript
 [
     {
         id?: string; //区域ID

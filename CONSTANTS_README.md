@@ -4,7 +4,7 @@
 ### 会议系统
 #### itc会议系统
 itc会议系统的设备的大类与类型是一样的
-```json
+```javascript
     [{
         "id": "1",
         "name": "温控器"
@@ -87,7 +87,7 @@ itc会议系统的设备的大类与类型是一样的
 #### lifesmart系统
 ##### 设备大类(deviceCategory)
 其deviceCategory就是下面数组的序号
-```json
+```javascript
     [
         '插座',
         '开关',
@@ -103,7 +103,7 @@ itc会议系统的设备的大类与类型是一样的
 ```
 ##### 设备类型(deviceType)
 其deviceType为对象的字段名称, description为deviceTypeStr 
-```json
+```javascript
     {
     'SL_OL': { description: '智慧插座', category: '插座', },
     'SL_OL_3C': { description: '智慧插座', category: '插座', },
@@ -201,7 +201,7 @@ itc会议系统的设备的大类与类型是一样的
 ### H8900
 H8900系统包括了安防、人脸、门禁、考勤、停车等等系统
 #### 设备大类
-```json
+```javascript
  {
     1: '编码器',
     2: '解码器',
@@ -220,7 +220,7 @@ H8900系统包括了安防、人脸、门禁、考勤、停车等等系统
 ```
 #### 设备类型
 第一层是设备类型所属的大类, 第二层是设备类型及说明
-```json
+```javascript
 {
     1: {
         1: 'DVR',

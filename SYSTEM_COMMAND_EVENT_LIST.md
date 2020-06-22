@@ -3,7 +3,7 @@
 
 ## 会议系统
 ### 现有的平台
-```json
+```javascript
 [
     { sdk: { manufacturer: 'itc', platform: 'cloud' } },
 ]
@@ -22,7 +22,7 @@
 
 ## 智能窗帘系统
 ### 现有平台
-```json
+```javascript
 [
     { sdk: { manufacturer: 'lifesmart', platform: 'ToB' } },
 ]
@@ -38,7 +38,7 @@
 
 ## 暖通系统
 ### 现有平台
-```json
+```javascript
 [
     { sdk: { manufacturer: 'metasys', platform: 'metasys' } },
 ]
@@ -60,7 +60,7 @@
 
 ## 安防系统
 ### 现有平台
-```json
+```javascript
 [
     { sdk: { manufacturer: 'dahua', platform: 'H8900' } },
 ]
@@ -86,7 +86,7 @@
 
 ## 门禁系统
 ### 现有平台
-```json
+```javascript
 [
     { sdk: { manufacturer: 'dahua', platform: 'H8900' } },
 ]
@@ -106,7 +106,7 @@
 
 ## 可视对讲系统管理
 ### 现有平台
-```json
+```javascript
 [
     { sdk: { manufacturer: 'dahua', platform: 'H8900' } },
 ]
@@ -131,7 +131,7 @@
 
 ## 客流统计系统
 ### 现有平台
-```json
+```javascript
 [
     { sdk: { manufacturer: 'dahua', platform: 'H8900' } },
 ]
