@@ -716,6 +716,7 @@
     unit?: string; //报警值单位
     time?: number; //报警时间
     message?: string; //报警信息
+    isSoluted: boolean = false; //报警是否解除
 }
 ```
 
