@@ -712,7 +712,7 @@
     value?: any;    //报警值
     name?: string;  //报警值名称
     priority?: number;  //报警优先级
-    type?: string; //报警类型
+    type?: string; //报警类型  因metasys文案暂无说明, 这条需要实际对接后才能得到
     unit?: string; //报警值单位
     time?: number; //报警时间
     message?: string; //报警信息
