@@ -492,6 +492,7 @@
 #### 返回数据
 ```javascript
 {
+    recordID?: string; //记录ID
     paperNumber?: string; //证件号
     paperType?: string;//证件类型
 
