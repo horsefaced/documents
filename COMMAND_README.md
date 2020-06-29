@@ -510,8 +510,10 @@
     province?: string; //省份
     city?: string; //城市
 
-    groupId?: string; //人脸库ID
+    groupId?: number; //人脸库ID
     groupName?: string; //人脸库名称
+    groupType?: number; //人脸库类型
+    groupTypeStr?: string; //人脸库类型说明
 
     similarity?:number; //相似度
     featureString?: string; //特征值
