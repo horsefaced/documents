@@ -144,3 +144,14 @@
 1. passengerFlow 发送客流统计区域的客流数据
 
 
+## 消防系统
+### 现有平台
+```javascript
+[
+    { sdk: { manufacturer: 'dahua', platform: 'firefighting' }}
+]
+```
+### 命令列表
+暂时没有
+### 事件列表
+1. realData.firefightingDeviceStatus

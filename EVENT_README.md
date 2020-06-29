@@ -765,3 +765,18 @@
     updateTime?: number; //数据更新时间
 }
 ```
+
+### 消防设备状态
+#### 频道名
+    realData.firefightingDeviceStatus
+#### 承载数据
+```javascript
+{
+    deviceCode?: string; //设备编号, 暂时设备编码例如01-0001-0001, 系统地址-部件回路-部件地址, 待到实际中进行调整
+    deviceType?: number; //消防设备类型
+    deviceTypeStr?: string; //消防设备类型说明
+    deviceStatus?: number; //消防设备状态, 对于消防设备, 不是正常的状态就是告警, 如果一个设备先有告警, 然后恢复正常状态, 则为解警
+    deviceStatusStr?: string; //消防设备状态说明
+    time?: number; //报警时间    
+}
+```
