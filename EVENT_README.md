@@ -49,7 +49,7 @@
 #### 承载数据
 ```javascript
 {
-    recordId?: number;  //设备ID
+    recordId?: number;  //记录ID
     cardNumber?: string;  //卡号
     cardStatus?: number;   //卡状态
     cardStatusStr?: string; //卡状态说明,   0: '激活',1: '空白',2: '冻结',3: '注销',
