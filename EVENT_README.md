@@ -532,7 +532,7 @@
     address?: string; //地址
     authority?: string; //发证机关
     image?: string; //照片
-    ethnic?: number; //民族
+    ethnic?: string; //民族
     similarity?: number; //相似度
     startTime?: number; //证件开始时间
     endTime?: number; //证件结束时间
