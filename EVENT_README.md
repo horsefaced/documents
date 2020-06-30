@@ -257,7 +257,7 @@
     
     cardNumber?: string; //停车卡号
     
-    enterVideoChanelId?: string; //入口视频通道号
+    enterVideoChannelId?: string; //入口视频通道号
     enterVideoChannelName?: string; //入口视频通道名称
     enterMode?: string; //入场方式, 0刷卡, 1自动识别
     enterChannelId?: string; //入口通道号
@@ -268,7 +268,7 @@
     enterSnapMinImage?: string; //进入抓拍小图
 
     exitplateNumber?: string; //出时车牌号
-    exitVideoChanelId?: string; //出口视频通道号
+    exitVideoChannelId?: string; //出口视频通道号
     exitVideoChannelName?: string; //出口视频通道名称
     exitChannelId?: string; //出口通道号
     exitChannelName?: string; //出口通道名称
