@@ -140,12 +140,12 @@
 需要开门的设备数组, 以下只显示最必要的内容, 方便调用者在不方便提供其它内容时进行调用
 ```javascript
 [{
-    channels: [{                //设备通道号列表
-        id?: string; //通道号
+    Channels: [{                //设备通道号列表
+        Id?: String; //通道号
     }],
 
-    dataSource: string; //子系统名称,
-    raw: //保存着对应厂家系统回传的原始数据
+    Datasource: String; //子系统名称,
+    Raw: //保存着对应厂家系统回传的原始数据
 }]
 ```
 
@@ -1034,3 +1034,26 @@ getPassengerFlowRegion
 ]
 ```
 
+### 控制云台
+#### name
+tripodheadControl
+#### params
+//其中需要控制的摄像头设备, 只显示最必要的内容, 方便调用者在不方便提供其它内容时进行调用
+```javascript
+{
+    command: string; //云台控制命令, 参考常量文档
+    footstep: number; //云台步长, 可选
+    //需要控制的摄像头设备, 这里的数据说明为简化形式
+    device: {
+        channels: [{               //设备通道号列表
+            id?: string; //通道号
+        }],
+
+        dataSource: string; //子系统名称,
+        raw: //保存着对应厂家系统回传的原始数据; 
+        sdk: //保存着厂家信息
+    }
+}
+```
+#### 返回数据
+没有返回数据
