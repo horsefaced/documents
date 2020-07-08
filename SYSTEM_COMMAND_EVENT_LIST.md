@@ -155,3 +155,13 @@
 暂时没有
 ### 事件列表
 1. realData.firefightingDeviceStatus
+
+## 云台操作
+### 现有平台
+```javascript
+[
+    { sdk: { manufacturer: 'dahua', platform: 'dpsdk' } },
+]
+```
+### 命令列表
+1. tripodheadControl
