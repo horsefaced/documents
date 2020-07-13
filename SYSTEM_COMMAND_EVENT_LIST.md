@@ -165,3 +165,4 @@
 ```
 ### 命令列表
 1. tripodheadControl
+2. lensOperation
