@@ -112,8 +112,8 @@
         dataSource: string; //子系统名称,
         raw: //保存着对应厂家系统回传的原始数据
     }],
-    start: number; //开始时间
-    end: number; //结束时间
+    start: string; //开始时间
+    end: string; //结束时间
 }
 ```
 #### 返回数据

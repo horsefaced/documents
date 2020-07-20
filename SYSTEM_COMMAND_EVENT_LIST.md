@@ -166,3 +166,14 @@
 ### 命令列表
 1. tripodheadControl
 2. lensOperation
+
+## 视频服务
+### 现有平台
+```javascript
+[
+    { sdk: { manufacturer: 'dahua', platform: 'h8900'}},
+]
+```
+### 命令列表
+1. getRealVideoSource
+2. getPlaybackVideoSource
