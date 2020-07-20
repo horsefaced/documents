@@ -70,6 +70,7 @@
     mainStream: boolean; //是否取主流, 如果为false, 或者为空, 则取副流
     type: 'rtsp'; //支持rtsp和hls两种格式, 默认是rtsp
     devices: [{
+        deviceId: string;   //设备ID
         channels: [{                //设备通道号列表
             id?: string; //通道号
         }],
@@ -82,12 +83,48 @@
 
 #### 返回数据
 ```javascript
-{
+[{
+    deviceId: string; //设备ID
     channelId: string; //通道号
     source: string; //视频流地址
     
     dataSource: string; //子系统名称
+}]
+```
+
+### 得到监控视频回放地址
+
+#### name
+    'getPlaybackVideoSource'
+
+#### params
+需要得到视频地址的设备列表, 下面只列出必要的参数
+```javascript
+{
+    mainStream: boolean; //是否取主流, 如果为false, 或者为空, 则取副流
+    type: 'rtsp'; //支持rtsp和hls两种格式, 默认是rtsp
+    devices: [{
+        deviceId: string;   //设备ID
+        channels: [{                //设备通道号列表
+            id?: string; //通道号
+        }],
+
+        dataSource: string; //子系统名称,
+        raw: //保存着对应厂家系统回传的原始数据
+    }],
+    start: number; //开始时间
+    end: number; //结束时间
 }
+```
+#### 返回数据
+```javascript
+[{
+    deviceId: string; //设备ID
+    channelId: string; //通道号
+    source: string; //视频流地址
+    
+    dataSource: string; //子系统名称
+}]
 ```
 
 ### 得到所有设备
