@@ -29,7 +29,7 @@
 ```
 ### 命令列表
 1. getAllDevices 得到当前智能窗帘控制器设备列表
-2. getAllBACPresentValue 得到所有窗帘控制器设备的当前状态, 1:打开、0.5:半开、0:关闭、-1:未知
+2. getAllBACPresentValue 窗帘控制器设备的当前状态中, name=switch的状态描述了窗帘的开关状态, 1:打开、0.5:半开、0:关闭、-1:未知, value为数值部分, description为中文说明部分
 3. openCurtain
 4. closeCurtain
 

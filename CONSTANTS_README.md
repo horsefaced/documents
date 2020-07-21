@@ -809,3 +809,29 @@ H8900系统包括了安防、人脸、门禁、考勤、停车等等系统
 ]
 ```
 
+### bacPresentValue 描述
+现在这个描述因暖通部分文档缺失, 只包含窗帘系统、会议系统、安防设备
+
+    unknown //未知状态
+    online //在离线状态,  0: 离线, 1: 在线
+    switch // 开关, 0: 关闭, 1: 开启, 0.5半开
+    light //灯光,  0: 灯光关闭, 1: 灯光打开, 用于灯光为设备的附属物的场景, 如果设备为灯光, 直接查询switch就可以知道灯光状态
+    motion //动态感应器 0: 未监测到移动, 1: 有检测到移动
+    temperature //温度
+    moisture //湿度
+    illumination //光照
+    waterFlooring //水浸
+    CH2O //甲醛浓度
+    gas //燃气浓度
+    CO2 //二氧化碳浓度
+    TVOC //总挥发性有机化合物
+    EPA //平均功率
+    smoke //烟雾报警, 0: 正常, 1: 报警
+    PM2.5
+    filterLife //滤芯寿命
+    UV //紫外线
+    VOC //挥发性有机物
+    underTemperature //底板温度, 用于地暖
+    power//电量
+    alarm //报警, 0: 正常, 1: 报警
+
