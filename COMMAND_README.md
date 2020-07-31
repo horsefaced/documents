@@ -130,7 +130,7 @@
 ### 得到所有设备
 
 #### name
-    'getAllDevices'
+    'getvisitortAllDevices'
 
 #### params
     无需参数
@@ -975,39 +975,40 @@ getVisitorRecords
 ```javascript
 [
     {
-    personName?: string; //访客名称
-    sex?: string; //性别
-    phone?: string; //电话号码
-    department?: string; //访客单位
+        id?: string; //记录id
+        personName?: string; //访客名称
+        sex?: string; //性别
+        phone?: string; //电话号码
+        department?: string; //访客单位
 
-    plateNumber?: string; //访客车牌号
+        plateNumber?: string; //访客车牌号
 
-    paperNumber?: string;   //访客证件号码
-    paperType?: string; //访客证件类型
-    paperImage?: string; //证件照片
+        paperNumber?: string;   //访客证件号码
+        paperType?: string; //访客证件类型
+        paperImage?: string; //证件照片
 
-    reason?: string; //访问原因
+        reason?: string; //访问原因
 
-    bookTime?: number;  //预约时间
-    bookLeaveTime?: number; //预约离开时间
-    realTime?: number;//实际到达时间 
-    realLeaveTime?: number; //实际离开时间
+        bookTime?: number;  //预约时间
+        bookLeaveTime?: number; //预约离开时间
+        realTime?: number;//实际到达时间 
+        realLeaveTime?: number; //实际离开时间
 
-    image?: string; //证件头像
-    snapImage?: string; //抓拍图片
+        image?: string; //证件头像
+        snapImage?: string; //抓拍图片
 
-    cardNumber?: string; //访客卡号
+        cardNumber?: string; //访客卡号
 
-    respondentId?: string; //被访人ID
-    respondentName?: string; //被访人名称
-    respondentCode?: string; //被访人编号
+        respondentId?: string; //被访人ID
+        respondentName?: string; //被访人名称
+        respondentCode?: string; //被访人编号
 
-    numberOfVisitor?: number; //访问人数
+        numberOfVisitor?: number; //访问人数
 
-    status?: number; //访客状态
-    statusStr?: string; //访客状态说明,0: '待审批',1: '预约',2: '来访',3: '离访',4: '预约取消',
+        status?: number; //访客状态
+        statusStr?: string; //访客状态说明,0: '待审批',1: '预约',2: '来访',3: '离访',4: '预约取消',
 
-    appointmentCode?: string; //预约码
+        appointmentCode?: string; //预约码
     }
 ]
 ```
