@@ -130,7 +130,7 @@
 ### 得到所有设备
 
 #### name
-    'getvisitortAllDevices'
+    'getAllDevices'
 
 #### params
     无需参数
