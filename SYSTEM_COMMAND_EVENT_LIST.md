@@ -72,7 +72,7 @@
 4. faceRecognitionRecord 人脸识别记录查询
 5. facePersonFeatureecord 人体特征记录查询
 6. carFeatureRecord 车辆特征记录查询
-7. nonmotoFeatureRecord 非机动车特征记录查询
+7. nonmotorFeatureRecord 非机动车特征记录查询
 8. faceSearch 以图搜图, 非常的慢, 非必要不要调用
 
 ### 事件列表

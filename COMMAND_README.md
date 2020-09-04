@@ -1057,7 +1057,7 @@ getVisitorSwipeCardRecords
 
 ### 得到客流统计区域
 #### name
-getPassengerFlowRegion
+getPassengerFlowRegions
 #### params
 没有参数
 #### 返回数据
