@@ -462,17 +462,21 @@
 {    
     recordId?: string; //记录ID
     grade?: number; //报警级别
+
     time?: number; //报警时间
     image?: string; //报警图片
     status?: number; //报警状态
-    type?: string; //报警类型
+
+    type?: number; //报警类型
+    typeStr?: string; //报警类型说明
+
+    handleStatus?: number; //报警处理状态
+    handleStatusStr?: string; //报警处理状态说明
+
     channelName?: string; //通道号
     deviceName?: string; //设备名
 
     unitType?: number; //设备单元类型
-
-    dataSource: string; //子系统名称,
-    raw: //保存着对应厂家系统回传的原始数据
 }
 ```
 
