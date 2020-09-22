@@ -142,8 +142,8 @@
     checkOutTime?: number; //签出时间
     checkOutStatus?: string; //签出状态
 
-    deviceId?: string; //设备ID
-    deviceName?: string; //设备名
+    siteId?: string; //考勤ID
+    siteName?: string; //考勤点名称
 }
 ```
 
@@ -236,7 +236,7 @@
     wayCode?: string; //车道号
     channelId?: string; //通道号
     channelName?: string; //通道名
-    deviceId?: string; //设备ID
+    deviceCode?: string; //设备编码
     deviceName?: string; //设备名
     snapImage?: string; //抓拍图片
     parkingLotName?: string; //停车场名称
