@@ -156,6 +156,7 @@
         seq?: number; //通道序列号
         unitType?: number; //通道对应的设备单元类型
         sn?: string; //通道对应设备的SN号
+        type?: number; //通道类型, 其中 1 为视频通道, 其他的类型现在暂时为大华的设备单元类型
     }],
     orgCode?: string; //设备组织编码, 不一定有,也不一定有用
     sn?: string; //设备sn号, 不一定有, 也不一定有用
