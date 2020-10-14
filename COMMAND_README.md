@@ -54,7 +54,7 @@
 ```javascript
 {
     manufacturer: 'dahua', //厂商名称, 表明数据提供厂商, 现有'dahua'
-    platform: 'h8900', //厂商SDK的名称
+    platform: 'H8900', //厂商SDK的名称
 }
 ```
 
