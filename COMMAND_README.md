@@ -42,7 +42,7 @@
   }]
 }
 ```
-    
+
 
 ## 命令列表
 
@@ -161,7 +161,9 @@
     sn?: string; //设备sn号, 不一定有, 也不一定有用
     status?: number; //设备状态, 不一定有, 也不一有用
     statusStr?: string; //设备状态中文说明
-    statusList: Array<{ value: number, description: string }> = []; //设备状态列表, 其中第一个就是设备的status与statusStr的值, 
+  	//设备状态列表, 其中第一个就是设备的status与statusStr的值, 
+  	//name参考常量文档中的bacPresentValue中的说明。
+    statusList: Array<{ value: number, description: string, name: string }> = []; 
 
     dataSource: string; //子系统名称,
     raw: //保存着对应厂家系统回传的原始数据
@@ -808,7 +810,7 @@
 ```
 
 ### 得到会议信息
-    
+
 #### name
     'getMeetings'
 

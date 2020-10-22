@@ -60,12 +60,15 @@
 
 ## 安防系统
 ### 现有平台
+
+#### 大华H8900
+
 ```javascript
 [
     { sdk: { manufacturer: 'dahua', platform: 'H8900' } },
 ]
 ```
-### 命令列表
+##### 命令列表
 1. getAllDevices 得到所有安防设备, 包括摄像头、报警器、门禁、道闸等
 2. alarmQueryHistoryRecord 查询整个安防系统的报警历史记录
 3. faceDetectionHistoryRecord 人脸检测记录查询
@@ -75,7 +78,7 @@
 7. nonmotorFeatureRecord 非机动车特征记录查询
 8. faceSearch 以图搜图, 非常的慢, 非必要不要调用
 
-### 事件列表
+##### 事件列表
 1. faceDetect
 2. faceRecognition
 3. personFeature
@@ -83,6 +86,22 @@
 5. nonmotorFeature
 6. deviceOnlineStatusChange 
 7. deviceAlarm 设备报警, 推荐直接显示 alarmTypeStr 的内容
+
+### 精华隆8100
+
+```javascript
+[
+  { sdk: { manufacturer: 'innopro', platform: '8100' } },
+]
+```
+
+##### 命令列表
+
+1. getAllDevices 得到所有设备
+
+##### 事件列表
+
+1. deviceAlarm 设备报警
 
 ## 门禁系统
 ### 现有平台
