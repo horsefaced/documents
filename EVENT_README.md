@@ -65,7 +65,7 @@
     deviceCode?: string;  //设备编码
     deviceName?: string;  //设备名称
 
-    enterOrExit?: number; //刷卡是出还是入, 1: 进门, 2:出门
+    enterOrExit?: number; //刷卡是出还是入, 1: 进门, 2:出门, 3: 进/出门, 0:全部
     openResult?: boolean;   //开门结果
     openType?: number; //开门类型
     openTypeStr?: string; //开门类型说明

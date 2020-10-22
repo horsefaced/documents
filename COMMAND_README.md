@@ -50,11 +50,11 @@
 2. params中的时间格式都为:  yyyy-MM-dd HH:mm:ss
 3. 返回结果中的时间都为时间戳
 4. **返回结果中只是描述了 data 数组中的单个元素的类型**
-5. 除了**得到监控视频地址**之外的所有返回值都有 sdk 这个属性, 其内部结构为
+5. 所有返回值都有 sdk 这个属性, 其内部结构为
 ```javascript
 {
     manufacturer: 'dahua', //厂商名称, 表明数据提供厂商, 现有'dahua'
-    platform: 'h8900', //厂商SDK的名称
+    platform: 'H8900', //厂商SDK的名称
 }
 ```
 
@@ -156,6 +156,7 @@
         seq?: number; //通道序列号
         unitType?: number; //通道对应的设备单元类型
         sn?: string; //通道对应设备的SN号
+        type?: number; //通道类型, 其中 1 为视频通道, 其他的类型现在暂时为大华的设备单元类型
     }],
     orgCode?: string; //设备组织编码, 不一定有,也不一定有用
     sn?: string; //设备sn号, 不一定有, 也不一定有用

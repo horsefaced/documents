@@ -193,7 +193,7 @@
 ### 现有平台
 ```javascript
 [
-    { sdk: { manufacturer: 'dahua', platform: 'h8900'}},
+    { sdk: { manufacturer: 'dahua', platform: 'H8900'}},
 ]
 ```
 ### 命令列表
