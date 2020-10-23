@@ -64,9 +64,7 @@
 #### 大华H8900
 
 ```javascript
-[
-    { sdk: { manufacturer: 'dahua', platform: 'H8900' } },
-]
+{ sdk: { manufacturer: 'dahua', platform: 'H8900' } }
 ```
 ##### 命令列表
 1. getAllDevices 得到所有安防设备, 包括摄像头、报警器、门禁、道闸等
@@ -90,9 +88,7 @@
 ### 精华隆8100
 
 ```javascript
-[
-  { sdk: { manufacturer: 'innopro', platform: '8100' } },
-]
+{ sdk: { manufacturer: 'innopro', platform: '8100' } }
 ```
 
 ##### 命令列表
@@ -101,7 +97,18 @@
 
 ##### 事件列表
 
-1. deviceAlarm 设备报警
+1. deviceAlarm
+2. deviceOnlineStatusChange
+
+### 安士安全（声音符合系统)
+
+```javascript
+{ sdk: { manufacturer: 'asrc', platform: 'asrc' } }
+```
+
+#### 事件列表
+
+1. deviceAlarm
 
 ## 门禁系统
 ### 现有平台
