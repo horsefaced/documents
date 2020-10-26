@@ -1,8 +1,28 @@
 # virupaksa现有服务信息
 
+## artemis
+
+使用端口：8161，61616
+
+启动命令：docker run -p 61616:61616 -p 8161:8161 -v artemis:/var/lib/artemis/etc --name artemis vromero/activemq-artemis
+
+## videoserver
+
+使用端口：58080
+
+启动命令：docker run  -p 28080:8080 -v videoserver:/etc --name videoserver videoserver:latest
+
+## virupaksa
+
+使用端口：12000
+
+启动命令：docker run -d --network="host" -v /home/docker/virupaksa:/etc -v /home/docker/virupaksa:/var/log --name virupaksa --hostname virupaksa --restart=always virupaksa
+
 ## dh-h8900-server
 
 使用端口： 12010
+
+启动命令：docker run -d --network="host" -v /home/docker/virupaksa:/etc -v /home/docker/virupaksa:/var/log --name dh-h8900-server --hostname dh-h8900 --restart=always dh-h8900-server
 
 ## lifesmart-server
 
@@ -24,6 +44,8 @@
 
 使用端口：12060
 
+启动命令：docker run -d --network="host" -v /home/docker/virupaksa:/etc -v /home/docker/virupaksa:/var/log --name dh-dpsdk-server --hostname dh-dpsdk --restart=always dh-dpsdk-server
+
 ## dh-firefighting-server
 
 使用端口：12070
@@ -34,11 +56,15 @@
 
 事件上报监听端口：12081
 
-## arc-server
+启动命令：docker run -d --network="host" -v virupaksa:/etc -v virupaksa:/var/log --name innopro-8100-server --hostname innopro-8100 --restart=always innopro-8100-server
+
+## asrc-server
 
 使用端口：12090
 
 事件上报监听端口：12091
+
+启动命令：docker run -d --network="host" -v virupaksa:/etc -v virupaksa:/var/log --name asrc-server --hostname asrc-server --restart=always asrc-server
 
 ## virupaksa-mock
 
