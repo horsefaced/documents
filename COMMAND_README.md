@@ -139,24 +139,24 @@
 会返回得到的所有设备的数组
 ```javascript
 {
-    deviceId?: String; //设备ID,
-    deviceName?: String; //设备名称, 
-    deviceCode?: String; //设备编码, 
+    deviceId: String; //设备ID,
+    deviceName: String; //设备名称, 
+    deviceCode: String; //设备编码, 
     deviceIp?: String; //设备IP,
     deviceCategory?: number; ///设备大类, 现在先用大华的, 
     deviceCategoryStr?: string; //设备大类中文名
-    deviceType?: number; //设备类型, 大华的, 
-    deviceTypeStr?: string; //设备类型中文名
+    deviceType: number; //设备类型, 大华的, 
+    deviceTypeStr: string; //设备类型中文名
     deviceUnitType?: number; //设备单元类型, 不一定有
     deviceUnitTypeStr?: string; //设备单元类型中文名
-    isDeviceOnline?: boolean; //设备在线状态
+    isDeviceOnline: boolean; //设备在线状态
     channels: [{                //设备通道号列表
         id?: string; //通道号
         name?: string; //通道名称
         seq?: number; //通道序列号
         unitType?: number; //通道对应的设备单元类型
         sn?: string; //通道对应设备的SN号
-        type?: number; //通道类型, 其中 1 为视频通道, 其他的类型现在暂时为大华的设备单元类型
+        type?: number; //通道类型, 其中 1 为视频通道, 0 为内部使用类型
     }],
     orgCode?: string; //设备组织编码, 不一定有,也不一定有用
     sn?: string; //设备sn号, 不一定有, 也不一定有用

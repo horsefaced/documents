@@ -503,17 +503,17 @@
 #### 承载数据
 ```javascript
 {
-    deviceCode?: string; //设备编号
+    deviceCode: string; //设备编号
     deviceName?: string; //设备名
     channelId?: string; //通道号
     channelName?: string; //通道名
     videoChannelId?: string; //视频通道号
     videoChannelName?: string; //视频通道名称
-    alarmType?: string; //报警类型
-    alarmTypeStr?: string; //报警类型说明
-    time?:number; //报警时间
+    alarmType: string; //报警类型
+    alarmTypeStr: string; //报警类型说明
+    time:number; //报警时间
     alarmCode?: string; //报警编码, 内部使用
-    status?: number; //报警状态, 1-报警产生, 2-报警消失
+    status: number; //报警状态, 1-报警产生, 2-报警消失
     images?: Array<string>; //现场抓拍图片
     message?: string; //报警的其他信息
 }
