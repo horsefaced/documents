@@ -262,6 +262,8 @@
     enterMode?: string; //入场方式, 0刷卡, 1自动识别
     enterChannelId?: string; //入口通道号
     enterChannelName?: string; //入口通道名称
+    enterDeviceCode?: string; //入口设备编码
+    enterDeviceName?: string; //入口设备名称
     enterTime?: number; //进入时间
     enterWayCode?: string; //进入车道编码
     enterSnapImage?: string; //进入抓拍图片
@@ -272,6 +274,8 @@
     exitVideoChannelName?: string; //出口视频通道名称
     exitChannelId?: string; //出口通道号
     exitChannelName?: string; //出口通道名称
+	  exitDeviceCode?: string; //出口设备编号
+    exitDeviceName?: string; //出口设备名称
     exitTime?: number; //出时间
     exitWayCode?: string; //出车道号
     exitSnapImage?: string; //出抓拍图片
@@ -349,6 +353,9 @@
 
     channelId?: string; //通道号
     channelName?: string; //通道名称
+  
+	  deviceCode?: string; //设备编号
+    deviceName?: string; //设备名称
 
     personName?: string; //姓名
 
