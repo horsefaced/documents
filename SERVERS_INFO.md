@@ -10,7 +10,7 @@
 
 使用端口：58080
 
-启动命令：docker run  -p 28080:8080 -v videoserver:/etc --name videoserver videoserver:latest
+启动命令：docker run  -p 58080:8080 -v videoserver:/etc --name videoserver videoserver:latest
 
 ## virupaksa
 
