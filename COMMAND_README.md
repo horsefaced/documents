@@ -83,13 +83,13 @@
 
 #### 返回数据
 ```javascript
-[{
+{
     deviceId: string; //设备ID
     channelId: string; //通道号
     source: string; //视频流地址
     
     dataSource: string; //子系统名称
-}]
+}
 ```
 
 ### 得到监控视频回放地址
@@ -179,14 +179,14 @@
 #### params
 需要开门的设备数组, 以下只显示最必要的内容, 方便调用者在不方便提供其它内容时进行调用
 ```javascript
-[{
+{
     Channels: [{                //设备通道号列表
         Id?: String; //通道号
     }],
 
     Datasource: String; //子系统名称,
     Raw: //保存着对应厂家系统回传的原始数据
-}]
+}
 ```
 
 #### 返回数据
@@ -200,14 +200,14 @@
 #### params
 需要关门的设备数组, 以下只显示最必要的内容, 方便调用者在不方便提供其它内容时进行调用
 ```javascript
-[{
+{
     channels: [{                //设备通道号列表
         id?: string; //通道号
     }],
 
     dataSource: string; //子系统名称,
     raw: //保存着对应厂家系统回传的原始数据
-}]
+}
 ```
 
 #### 返回数据
@@ -221,14 +221,14 @@
 #### params
 需要常开的设备数组, 以下只显示最必要的内容, 方便调用者在不方便提供其它内容时进行调用
 ```javascript
-[{
+{
     channels: [{                //设备通道号列表
         id?: string; //通道号
     }],
 
     dataSource: string; //子系统名称,
     raw: //保存着对应厂家系统回传的原始数据
-}]
+}
 ```
 
 #### 返回数据
@@ -242,14 +242,14 @@
 #### params
 需要常关的设备数组, 以下只显示最必要的内容, 方便调用者在不方便提供其它内容时进行调用
 ```javascript
-[{
+{
     channels: [{                //设备通道号列表
         id?: string; //通道号
     }],
 
     dataSource: string; //子系统名称,
     raw: {} //保存着对应厂家系统回传的原始数据
-}]
+}
 ```
 
 #### 返回数据
@@ -949,7 +949,6 @@ status 会议状态内容为:
 ```
 #### 返回数据
 ```javascript
-[
     {
         serialNumber?: string; //流水号
 
@@ -970,7 +969,6 @@ status 会议状态内容为:
         time?: number; //交易时间
         bookTime?: number; //入账时间
     }
-]
 ```
 
 ### 得到访客列表
@@ -980,7 +978,6 @@ getVisitorRecords
 没有参数
 #### 返回数据
 ```javascript
-[
     {
         id?: string; //记录id
         personName?: string; //访客名称
@@ -1017,7 +1014,6 @@ getVisitorRecords
 
         appointmentCode?: string; //预约码
     }
-]
 ```
 
 ### 得到访客刷卡记录
@@ -1032,7 +1028,6 @@ getVisitorSwipeCardRecords
 ```
 #### 返回数据
 ```javascript
-[
     {
     cardNumber?: string;  //卡号
     cardStatus?: number;   //卡状态
@@ -1055,7 +1050,6 @@ getVisitorSwipeCardRecords
 
     time?: number;  //刷卡时间
     }
-]
 ```
 
 ### 得到客流统计区域
@@ -1065,7 +1059,6 @@ getPassengerFlowRegions
 没有参数
 #### 返回数据
 ```javascript
-[
     {
         id?: string; //区域ID
         regionCode?: string; //区域编码
@@ -1076,7 +1069,6 @@ getPassengerFlowRegions
         upperLimit?: number; //人数上限
         updateTime?: number; //数据更新时间
     }
-]
 ```
 
 ### 控制云台
