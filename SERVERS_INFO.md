@@ -4,13 +4,13 @@
 
 使用端口：8161，61616
 
-启动命令：docker run -d -p 61616:61616 -p 8161:8161 -v artemis:/var/lib/artemis/etc --name artemis vromero/activemq-artemis
+启动命令：docker run -d -p 61616:61616 -p 8161:8161 -v artemis:/var/lib/artemis/etc --name artemis --restart=always vromero/activemq-artemis
 
 ## videoserver
 
 使用端口：58080
 
-启动命令：docker run -d -p 58080:8080 -v videoserver:/etc --name videoserver videoserver:latest
+启动命令：docker run -d -p 58080:8080 -v videoserver:/etc --name videoserver --restart=always videoserver:latest
 
 ## virupaksa
 
