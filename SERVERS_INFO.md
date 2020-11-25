@@ -16,13 +16,13 @@
 
 使用端口：12000
 
-启动命令：docker run -d --network="host" -v /home/docker/virupaksa:/etc -v /home/docker/virupaksa:/var/log --name virupaksa --hostname virupaksa --restart=always virupaksa
+启动命令：docker run -d --network="host" -v virupaksa:/etc -v virupaksa:/var/log --name virupaksa --hostname virupaksa --restart=always virupaksa
 
 ## dh-h8900-server
 
 使用端口： 12010
 
-启动命令：docker run -d --network="host" -v /home/docker/virupaksa:/etc -v /home/docker/virupaksa:/var/log --name dh-h8900-server --hostname dh-h8900 --restart=always dh-h8900-server
+启动命令：docker run -d --network="host" -v virupaksa:/etc -v virupaksa:/var/log --name dh-h8900-server --hostname dh-h8900 --restart=always dh-h8900-server
 
 ## lifesmart-server
 
@@ -44,7 +44,7 @@
 
 使用端口：12060
 
-启动命令：docker run -d --network="host" -v /home/docker/virupaksa:/etc -v /home/docker/virupaksa:/var/log --name dh-dpsdk-server --hostname dh-dpsdk --restart=always dh-dpsdk-server
+启动命令：docker run -d --network="host" -v virupaksa:/etc -v virupaksa:/var/log --name dh-dpsdk-server --hostname dh-dpsdk --restart=always dh-dpsdk-server
 
 ## dh-firefighting-server
 
