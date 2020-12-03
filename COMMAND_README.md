@@ -1068,11 +1068,14 @@ getPassengerFlowRegions
         realTimeNumber?: number; //实时人数
         upperLimit?: number; //人数上限
         updateTime?: number; //数据更新时间
+      
+        sourceDeviceCode?: string; //区域人流数据来源设备编码
     }
 ```
 
 ### 控制云台
 #### name
+
 tripodheadControl
 #### params
 //其中需要控制的摄像头设备, 只显示最必要的内容, 方便调用者在不方便提供其它内容时进行调用

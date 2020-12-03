@@ -44,6 +44,7 @@
 ### 刷卡记录
 
 #### 频道名
+
     realData.swipeCard
 
 #### 承载数据
@@ -770,6 +771,8 @@
     realTimeNumber?: number; //实时人数
     upperLimit?: number; //人数上限
     updateTime?: number; //数据更新时间
+  
+    sourceDeviceCode?: string; //客流数据来源设备编码
 }
 ```
 
