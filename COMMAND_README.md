@@ -1240,9 +1240,15 @@ camearInfrared
 
 本章节下的接口用于调试使用
 
-## 快速得到所有设备
+## 得到所有设备
 
 url: /command/getAllDevices
+
+method: GET
+
+## 得到组织机构树
+
+url: /command/getDGroupInfoXML
 
 method: GET
 
