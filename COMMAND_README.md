@@ -1215,6 +1215,7 @@ tripodheadRainBrush
 
 ### 相机红外控制
 #### name
+
 camearInfrared
 #### params
 ```javascript
@@ -1234,4 +1235,26 @@ camearInfrared
 ```
 #### 返回数据
 没有返回数据
+
+# 调试用接口
+
+本章节下的接口用于调试使用
+
+## 快速得到所有设备
+
+url: /command/getAllDevices
+
+method: GET
+
+## 得到日志文件
+
+url: /log/:hostname/:time
+
+method: GET
+
+hostname: 子系统名称如：dh-h8900, dh-dpsdk 等
+
+time：需要得到的日志日期，格式为 YYYYMMDD，如 20201120
+
+
 
