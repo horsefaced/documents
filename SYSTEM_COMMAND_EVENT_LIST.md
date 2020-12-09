@@ -206,3 +206,21 @@
 ### 命令列表
 1. getRealVideoSource
 2. getPlaybackVideoSource
+
+## 单兵系统
+
+### 现有平台
+
+```javascript
+[
+  { sdk: { manufacturer: 'dahua', platform: 'x9000'}},
+]
+```
+
+### 命令列表
+
+1. getAllDevices
+
+### 事件列表
+
+1. devicePosition 单兵设备GIS位置

@@ -790,3 +790,26 @@
     time?: number; //报警时间    
 }
 ```
+
+### 设备位置
+
+#### 频道名
+
+```
+realData.devicePosition
+```
+
+#### 承载数据
+
+```javascript
+{
+    public deviceCode: string, //设备编号
+    public lon: number, //经度
+    public lat: number, //纬度
+    public time: number = new Date().getTime(), //上报时间
+    public height: number = 0, //高度(米)
+    public angle: number = 0, //方向角(正北为0，顺时针，单位度)
+    public speed: number = 0, //速度
+}
+```
+

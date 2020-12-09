@@ -66,6 +66,16 @@
 
 启动命令：docker run -d --network="host" -v virupaksa:/etc -v virupaksa:/var/log --name asrc-server --hostname asrc-server --restart=always asrc-server
 
+## hk-openapi-server
+
+使用端口：12100
+
+## dh-x9000-server
+
+使用端口：12110
+
+启动命令：docker run -d --network="host" -v virupaksa:/etc -v virupaksa:/var/log --name dh-x9000-server --hostname dh-x9000 --restart=always dh-x9000-server
+
 ## virupaksa-mock
 
 使用端口：12990
