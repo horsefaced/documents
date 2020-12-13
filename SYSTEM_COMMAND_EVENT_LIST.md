@@ -224,3 +224,5 @@
 ### 事件列表
 
 1. devicePosition 单兵设备GIS位置
+2. deviceAlarm 设备报警
+3. deviceOnlineStatusChange 设备在离线
