@@ -70,6 +70,8 @@
 
 使用端口：12100
 
+启动命令：docker run -d --network="host" -v virupaksa:/etc -v virupaksa:/var/log --name hk-openapi-server --hostname  hk-openapi --restart=always  hk-openapi-server
+
 ## dh-x9000-server
 
 使用端口：12110

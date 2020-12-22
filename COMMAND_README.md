@@ -65,7 +65,6 @@
 需要得到视频地址的设备列表, 下面只列出必要的参数
 ```javascript
 {
-    mainStream: boolean; //是否取主流, 如果为false, 或者为空, 则取副流
     type: 'rtsp'; //支持rtsp和hls两种格式, 默认是rtsp
     devices: [{
         deviceId: string;   //设备ID
@@ -99,7 +98,6 @@
 需要得到视频地址的设备列表, 下面只列出必要的参数
 ```javascript
 {
-    mainStream: boolean; //是否取主流, 如果为false, 或者为空, 则取副流
     type: 'rtsp'; //支持rtsp和hls两种格式, 默认是rtsp
     devices: [{
         deviceId: string;   //设备ID
@@ -1083,6 +1081,8 @@ tripodheadControl
     footstep: number; //云台步长, 可选
     //需要控制的摄像头设备, 这里的数据说明为简化形式
     device: {
+      	deviceId: string;  //设备ID
+        deviceCode: string; //设备编码
         channels: [{               //设备通道号列表
             id?: string; //通道号
         }],
@@ -1107,6 +1107,8 @@ lensOperation
     footstep: number; //云台步长, 可选
     //需要控制的摄像头设备, 这里的数据说明为简化形式
     device: {
+       	deviceId: string;  //设备ID
+        deviceCode: string; //设备编码
         channels: [{               //设备通道号列表
             id?: string; //通道号
         }],
@@ -1132,6 +1134,8 @@ tripodheadLocate
     z: number;
     //需要控制的摄像头设备, 这里的数据说明为简化形式
     device: {
+       	deviceId: string;  //设备ID
+        deviceCode: string; //设备编码
         channels: [{               //设备通道号列表
             id?: string; //通道号
         }],
@@ -1154,6 +1158,8 @@ tripodheadLock
     lock: boolean; //是否锁定
     //需要控制的摄像头设备, 这里的数据说明为简化形式
     device: {
+       	deviceId: string;  //设备ID
+        deviceCode: string; //设备编码
         channels: [{               //设备通道号列表
             id?: string; //通道号
         }],
@@ -1176,6 +1182,8 @@ tripodheadLight
     open: boolean; //是否打开
     //需要控制的摄像头设备, 这里的数据说明为简化形式
     device: {
+       	deviceId: string;  //设备ID
+        deviceCode: string; //设备编码
         channels: [{               //设备通道号列表
             id?: string; //通道号
         }],
@@ -1198,6 +1206,8 @@ tripodheadRainBrush
     open: boolean; //是否打开
     //需要控制的摄像头设备, 这里的数据说明为简化形式
     device: {
+       	deviceId: string;  //设备ID
+        deviceCode: string; //设备编码
         channels: [{               //设备通道号列表
             id?: string; //通道号
         }],
@@ -1221,6 +1231,8 @@ camearInfrared
     open: boolean; //是否打开
     //需要控制的摄像头设备, 这里的数据说明为简化形式
     device: {
+       	deviceId: string;  //设备ID
+        deviceCode: string; //设备编码
         channels: [{               //设备通道号列表
             id?: string; //通道号
         }],

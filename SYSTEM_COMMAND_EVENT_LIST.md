@@ -59,14 +59,14 @@
 1. consumeTurnover 消费流水推送
 
 ## 安防系统
-### 现有平台
 
-#### 大华H8900
+### 大华H8900
 
 ```javascript
 { sdk: { manufacturer: 'dahua', platform: 'H8900' } }
 ```
 ##### 命令列表
+
 1. getAllDevices 得到所有安防设备, 包括摄像头、报警器、门禁、道闸等
 2. alarmQueryHistoryRecord 查询整个安防系统的报警历史记录
 3. faceDetectionHistoryRecord 人脸检测记录查询
@@ -84,6 +84,16 @@
 5. nonmotorFeature
 6. deviceOnlineStatusChange 
 7. deviceAlarm 设备报警, 推荐直接显示 alarmTypeStr 的内容
+
+### 海康威视
+
+```javascript
+{ sdk: {manufacturer: 'hikvision', platform: 'openapi'}}
+```
+
+##### 命令列表
+
+1. getAllDevices 得到所有设备
 
 ### 精华隆8100
 
@@ -201,6 +211,7 @@
 ```javascript
 [
     { sdk: { manufacturer: 'dahua', platform: 'H8900'}},
+    { sdk: { manufacturer: 'hikvision', platform: 'openapi'}},
 ]
 ```
 ### 命令列表
