@@ -65,9 +65,11 @@
 需要得到视频地址的设备列表, 下面只列出必要的参数
 ```javascript
 {
+  	mainStream: boolean; //是否取主流, 如果为false, 或者为空则是副流
     type: 'rtsp'; //支持rtsp和hls两种格式, 默认是rtsp
     devices: [{
         deviceId: string;   //设备ID
+        deviceCode: string; //设备编码
         channels: [{                //设备通道号列表
             id?: string; //通道号
         }],
@@ -82,6 +84,7 @@
 ```javascript
 {
     deviceId: string; //设备ID
+    deviceCode: string; //设备编码
     channelId: string; //通道号
     source: string; //视频流地址
     
@@ -98,9 +101,11 @@
 需要得到视频地址的设备列表, 下面只列出必要的参数
 ```javascript
 {
+    mainStream: boolean; //是否取主流, 如果为false, 或者为空则是副流
     type: 'rtsp'; //支持rtsp和hls两种格式, 默认是rtsp
     devices: [{
         deviceId: string;   //设备ID
+        deviceCode: string; //设备编码
         channels: [{                //设备通道号列表
             id?: string; //通道号
         }],
@@ -116,6 +121,7 @@
 ```javascript
 [{
     deviceId: string; //设备ID
+    deviceCode: string; //设备编码
     channelId: string; //通道号
     source: string; //视频流地址
     

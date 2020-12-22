@@ -11,13 +11,14 @@
    1. 安防系统部分添加海康威视及其支持的命令
    2. 视频服务部分添加海康威视及其支持的命令
 3. 命令文档中
-   1. 控制云台, 在请求中添加deviceId, deviceCode参数
-   2. 控制镜头, 在请求中添加deviceId, deviceCode参数
-   3. 云台快速定位,, 在请求中添加deviceId, deviceCode参数
-   4. 锁定云台, 在请求中添加deviceId, deviceCode参数
-   5. 云台灯光控制, 在请求中添加deviceId, deviceCode参数
-   6. 云台雨刷控制, 在请求中添加deviceId, deviceCode参数
-   7. 相机红外控制, 在请求中添加deviceId, deviceCode参数
+   1. 视频流和回放流, 在请求中添加deviceCode参数
+   2. 控制云台, 在请求中添加deviceId, deviceCode参数
+   3. 控制镜头, 在请求中添加deviceId, deviceCode参数
+   4. 云台快速定位,, 在请求中添加deviceId, deviceCode参数
+   5. 锁定云台, 在请求中添加deviceId, deviceCode参数
+   6. 云台灯光控制, 在请求中添加deviceId, deviceCode参数
+   7. 云台雨刷控制, 在请求中添加deviceId, deviceCode参数
+   8. 相机红外控制, 在请求中添加deviceId, deviceCode参数
 
 ## 特别说明
 
