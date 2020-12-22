@@ -69,7 +69,7 @@
     type: 'rtsp'; //支持rtsp和hls两种格式, 默认是rtsp
     devices: [{
         deviceId: string;   //设备ID
-        deviceCode: string; //设备编码
+        deviceCode: string; //设备编码, 现在本参数暂时还不是强制性的
         channels: [{                //设备通道号列表
             id?: string; //通道号
         }],
@@ -84,7 +84,7 @@
 ```javascript
 {
     deviceId: string; //设备ID
-    deviceCode: string; //设备编码
+    deviceCode: string; //设备编码, 在请求时如果没有传入deviceCode, 则本返回值不会返回
     channelId: string; //通道号
     source: string; //视频流地址
     
@@ -105,7 +105,7 @@
     type: 'rtsp'; //支持rtsp和hls两种格式, 默认是rtsp
     devices: [{
         deviceId: string;   //设备ID
-        deviceCode: string; //设备编码
+        deviceCode: string; //设备编码, 现在本参数暂时还不是强制性的
         channels: [{                //设备通道号列表
             id?: string; //通道号
         }],
@@ -121,7 +121,7 @@
 ```javascript
 [{
     deviceId: string; //设备ID
-    deviceCode: string; //设备编码
+    deviceCode: string; //设备编码, 在请求时如果没有传入deviceCode, 则本返回值不会返回
     channelId: string; //通道号
     source: string; //视频流地址
     
