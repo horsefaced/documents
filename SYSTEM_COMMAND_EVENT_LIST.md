@@ -25,7 +25,7 @@
 ```javascript
 [
     { sdk: { manufacturer: 'lifesmart', platform: 'ToB' } },
-  	{ sdk: { manufacturer: 'lifesmart', platform: 'lgc '} },
+  	{ sdk: { manufacturer: 'lifesmart', platform: 'lgc'} },
 ]
 ```
 ### 命令列表

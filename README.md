@@ -13,7 +13,7 @@
 2. 事件文档
    1. bacPresentValue添加deviceCode
    2. bacAlarm添加deviceCode
-3. 系统与命令对应表添加新的系统: { sdk: { manufacturer: 'lifesmart', platform: 'lgc '} }
+3. 系统与命令对应表添加新的系统: { sdk: { manufacturer: 'lifesmart', platform: 'lgc'} }
 
 ### 2020.12.22
 
