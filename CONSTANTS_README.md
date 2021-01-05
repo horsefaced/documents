@@ -99,10 +99,12 @@ itc会议系统的设备的大类与类型是一样的
         '⻔锁',
         '摄像头',
         '其它',
+        '智慧中心',
+        '区域',
     ]
 ```
 ##### 设备类型(deviceType)
-其deviceType为对象的字段名称, description为deviceTypeStr 
+其deviceType为对象的字段名称, description为deviceTypeStr, 没有设备单元类型
 ```javascript
     {
     'SL_OL': { description: '智慧插座', category: '插座', },
@@ -195,7 +197,9 @@ itc会议系统的设备的大类与类型是一样的
     'LSSSMINIV1': { description: '多功能报警器', category: '其它', },
     'SL_ETDOOR': { description: '⻋库⻔', category: '其它', },
     'SL_ALM': { description: '智能报警器(CoSS版)', category: '其它', },
-    }
+    'center': { description: '智慧中心', category: '智慧中心'},
+    'area': { description: '区域', cateogry: '区域' },
+}
 ```
 
 ### H8900
@@ -1327,11 +1331,12 @@ H8900系统包括了安防、人脸、门禁、考勤、停车等等系统
     online //在离线状态,  0: 离线, 1: 在线
     switch // 开关, 0: 关闭, 1: 开启, 0.5半开
     light //灯光,  0: 灯光关闭, 1: 灯光打开, 用于灯光为设备的附属物的场景, 如果设备为灯光, 直接查询switch就可以知道灯光状态
-    motion //动态感应器 0: 未监测到移动, 1: 有检测到移动
+    motion //动态感应器 0: 未侦测到移动, 1: 有侦测到移动
     temperature //温度
+    target_temperature //目标温度
     moisture //湿度
     illumination //光照
-    waterFlooring //水浸
+    waterFlooring //水浸, 0为没有,其它值为程度值
     CH2O //甲醛浓度
     gas //燃气浓度
     CO2 //二氧化碳浓度
@@ -1343,9 +1348,17 @@ H8900系统包括了安防、人脸、门禁、考勤、停车等等系统
     UV //紫外线
     VOC //挥发性有机物
     underTemperature //底板温度, 用于地暖
-    power//电量
+    battery//电池电量, 用于表现电池等
+    power //功率
+    energy //用电量
     alarm //报警, 0: 正常, 1: 报警
     arming //防区布防状态：0 未知状态，1 外出布防，2 在家布防 ,3 撤防状态 4、布防延时
+    door //门状态, 0: 关闭, 1, 开启
+    voltage //电压
+    open_precentage //打开百分比, 如窗帘的打开百分比
+    target_open_precentage //目标打开百分比
+    ac_mode //空调模式: 0 关闭, 1 自动, 2 吹风, 3 制冷, 4 制热, 5 除湿
+    ac_wind_speed //空调风速
 
 
 

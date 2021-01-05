@@ -4,6 +4,17 @@
 
 ## 更新日志
 
+### 2021.01.05 15:09:59
+
+1. 常量文档
+   1. bacPresentValue添加目标温度、 电池电量、用电量、门状态、电压、打开百分比、目标打开百分比、空调模式、空调风量
+   2. bacPresentValue修改原表示电量的power 为功率
+   3. lifesmart系统设备大类与设备类型添加智慧中心与区域
+2. 事件文档
+   1. bacValue添加deviceCode
+   2. bacAlarm添加deviceCode
+3. 系统与命令对应表添加新的系统: { sdk: { manufacturer: 'lifesmart', platform: 'lgc '} }
+
 ### 2020.12.22
 
 1. 常量文档添加海康威视的设备类型

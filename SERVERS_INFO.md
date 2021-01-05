@@ -24,7 +24,7 @@
 
 启动命令：docker run -d --network="host" -v virupaksa:/etc -v virupaksa:/var/log --name dh-h8900-server --hostname dh-h8900 --restart=always dh-h8900-server
 
-## lifesmart-server
+## lifesmart-tob-server
 
 使用端口： 12020
 
@@ -77,6 +77,10 @@
 使用端口：12110
 
 启动命令：docker run -d --network="host" -v virupaksa:/etc -v virupaksa:/var/log --name dh-x9000-server --hostname dh-x9000 --restart=always dh-x9000-server
+
+## lifesmart-lgc-server
+
+使用端口: 12120
 
 ## virupaksa-mock
 

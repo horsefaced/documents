@@ -704,8 +704,9 @@
 ```javascript
 {
     deviceId?: string; //设备ID
-    value?: any;    //当前值
-    name?: string;  //值名称
+    deviceCode: string; //设备编码
+    value?: any;    //当前值   
+    name?: string;  //值名称  名称参考常量文档中 bacPresentValue 描述 这一部分
     description?: string;   //说明
     time: number; //值的产生时间
 }
@@ -715,10 +716,12 @@
 #### 频道名
     realData.bacAlarm
 #### 承载数据
+
 ```javascript
 {
     id?: string;
     deviceId?: string; //设备ID
+  	deviceCode: string; //设备编码
     value?: any;    //报警值
     name?: string;  //报警值名称
     priority?: number;  //报警优先级
