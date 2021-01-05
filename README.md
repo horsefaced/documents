@@ -11,7 +11,7 @@
    2. bacPresentValue修改原表示电量的power 为功率
    3. lifesmart系统设备大类与设备类型添加智慧中心与区域
 2. 事件文档
-   1. bacValue添加deviceCode
+   1. bacPresentValue添加deviceCode
    2. bacAlarm添加deviceCode
 3. 系统与命令对应表添加新的系统: { sdk: { manufacturer: 'lifesmart', platform: 'lgc '} }
 
