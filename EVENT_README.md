@@ -779,10 +779,14 @@
 }
 ```
 
-### 消防设备状态
+### 消防设备状态(废弃)
+
+现在使用realData.deviceAlarm 代替
+
 #### 频道名
     realData.firefightingDeviceStatus
 #### 承载数据
+
 ```javascript
 {
     deviceCode?: string; //设备编号, 暂时设备编码例如01-0001-0001, 系统地址-部件回路-部件地址, 待到实际中进行调整

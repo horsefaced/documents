@@ -82,6 +82,10 @@
 
 使用端口: 12120
 
+## cmb-cloud-server
+
+使用端口: 12130
+
 ## virupaksa-mock
 
 使用端口：12990
