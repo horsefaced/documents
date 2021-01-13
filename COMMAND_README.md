@@ -1250,6 +1250,111 @@ camearInfrared
 }
 ```
 #### 返回数据
+
+没有返回数据
+
+### 得到音乐列表
+
+#### name
+
+getMusicList
+
+#### params
+
+无需参数
+
+#### 返回数据
+
+```javascript
+{
+  id: string, //音乐ID
+  duration: number, //音乐时长
+  name: string, //音乐名称
+}
+```
+
+### 播放音乐
+
+#### name
+
+playMusic
+
+#### params
+
+```javascript
+{
+  music: {
+    id: string, //音乐ID
+    duration: number, //音乐时长
+    name: string, //音乐名称
+  },
+  devices: [
+    {
+      deviceId: string //设备ID
+      deviceCode: string //设备编码
+      dataSource: string; //子系统名称,
+      raw: //原始数据
+      sdk: //厂家信息
+    }
+  ]
+}
+```
+
+#### 返回数据
+
+没有返回数据
+
+### 设置音量
+
+#### name
+
+setVolume
+
+#### params
+
+```javascript
+{
+  volume: number, //音量, 0-100
+  devices: [
+    {
+      deviceId: string //设备ID
+      deviceCode: string //设备编码
+      dataSource: string; //子系统名称,
+      raw: //原始数据
+      sdk: //厂家信息
+    }
+  ]
+}
+```
+
+#### 返回数据
+
+没有返回数据
+
+### 停止音乐播放
+
+#### name
+
+stopMusic
+
+#### params
+
+```javascript
+{
+  devices: [
+    {
+      deviceId: string //设备ID
+      deviceCode: string //设备编码
+      dataSource: string; //子系统名称,
+      raw: //原始数据
+      sdk: //厂家信息
+    }
+  ]
+}
+```
+
+#### 返回数据
+
 没有返回数据
 
 # 调试用接口

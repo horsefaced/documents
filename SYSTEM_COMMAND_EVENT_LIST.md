@@ -3,6 +3,7 @@
 
 ## 会议系统
 ### 现有的平台
+
 ```javascript
 [
     { sdk: { manufacturer: 'itc', platform: 'cloud' } },
@@ -194,7 +195,7 @@
 ### 命令列表
 暂时没有
 ### 事件列表
-1. realData.firefightingDeviceStatus
+1. deviceAlarm
 
 ## 云台操作
 ### 现有平台
@@ -238,3 +239,27 @@
 1. devicePosition 单兵设备GIS位置
 2. deviceAlarm 设备报警
 3. deviceOnlineStatusChange 设备在离线
+
+## 音乐广播系统
+
+### 现在平台
+
+```javascript
+[
+  { sdk: { manufacturer: 'dsppa', platform: 'mag6180' }},
+]
+```
+
+### 命令列表
+
+1. getAllDevices
+2. getMusicList
+3. playMusic
+4. setVolume
+5. stopMusic
+
+### 事件列表
+
+1. deviceOnlineStatusChange
+2. deviceAlarm
+3. bacPresentValue //用于更新设备音量

@@ -86,6 +86,10 @@
 
 使用端口: 12130
 
+### dsppa-mag6180-server
+
+使用端口: 12140
+
 ## virupaksa-mock
 
 使用端口：12990
