@@ -13,7 +13,7 @@
         id: string, //命令的唯一ID, 由调用者生成, 用于区别每次请求的命令
         name: string, //命令名, 本次需要执行的命令名称
         params: any, //本次命令的参数, 根据不同的命令, 需要提供的参数不同
-    }
+    }
 ```
 
 #### Response
@@ -119,14 +119,14 @@
 ```
 #### 返回数据
 ```javascript
-[{
+{
     deviceId: string; //设备ID
     deviceCode: string; //设备编码, 在请求时如果没有传入deviceCode, 则本返回值不会返回
     channelId: string; //通道号
     source: string; //视频流地址
     
     dataSource: string; //子系统名称
-}]
+}
 ```
 
 ### 得到所有设备
@@ -1264,6 +1264,8 @@ getMusicList
 无需参数
 
 #### 返回数据
+
+返回的是服务器端的音乐列表, 迪士普的机制所限, 音乐列表不要缓存, 需要每次都从接口中得到最新的. 
 
 ```javascript
 {

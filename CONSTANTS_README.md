@@ -15,7 +15,7 @@
   { sdk: { manufacturer: 'dahua', platform: 'firefighting' }}, //大华消防
   { sdk: { manufacturer: 'dahua', platform: 'dpsdk' } }, //大华基础服务
   { sdk: { manufacturer: 'dahua', platform: 'x9000'}}, //大华指挥系统
-  { sdk: { manufacturer: 'dsppa', platform: 'mag6180' }}, //安士普音乐广播系统
+  { sdk: { manufacturer: 'dsppa', platform: 'mag6180' }}, //迪士普音乐广播系统
 ]
 ```
 
