@@ -50,6 +50,8 @@
 
 使用端口：12070
 
+启动命令: docker run -d --network="host" -v virupaksa:/etc -v virupaksa:/var/log --name dh-firefighting --hostname dh-firefighting dh-firefighting-server:latest
+
 ## innopro-8100-server
 
 使用端口：12080
