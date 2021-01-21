@@ -32,6 +32,8 @@
 
 使用端口：12030
 
+启动命令: docker run -d --network="host" -v virupaksa:/etc -v virupaksa:/var/log --name itc-server --hostname itc-server itc-server:latest
+
 ## metasys-server
 
 使用端口：12040
@@ -39,6 +41,8 @@
 ## zytk-server
 
 使用端口：12050
+
+启动命令: docker run -d --network="host" -v virupaksa:/etc -v virupaksa:/var/log --name zytk-server --hostname zytk zytk-server:latest
 
 ## dh-dpsdk-server
 
@@ -83,6 +87,8 @@
 ## lifesmart-lgc-server
 
 使用端口: 12120
+
+启动命令: docker run -d --network="host" -v virupaksa:/etc -v virupaksa:/var/log --name lifesmart-lgc --hostname lifesmart-lgc lifesmart-lgc-server:latest
 
 ## cmb-cloud-server
 
