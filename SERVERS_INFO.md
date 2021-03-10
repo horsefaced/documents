@@ -94,9 +94,19 @@
 
 使用端口: 12130
 
-### dsppa-mag6180-server
+## dsppa-mag6180-server
 
 使用端口: 12140
+
+## dh-netsdk-server
+
+使用端口: 12150
+
+## dh-u8000-server
+
+使用端口: 12160
+
+启动命令: sudo docker run -d -p 12160:12160 -v virupaksa:/etc --name dh-u8000 --hostname dh-u8000 dh-u8000-server:latest
 
 ## virupaksa-mock
 

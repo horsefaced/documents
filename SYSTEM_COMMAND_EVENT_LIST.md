@@ -122,6 +122,25 @@
 
 1. deviceAlarm
 
+### 大华u8000
+
+```javascript
+{ sdk: { manufacturer: 'dahua', platform: 'u8000'}}
+```
+
+#### 命令列表
+
+1. getAllDevices
+2. tripodheadControl
+3. lensOperation
+4. tripodheadLocate
+5. tripodheadLock
+
+#### 事件列表
+
+1. deviceAlarm
+2. deviceOnlineStatusChange
+
 ## 门禁系统
 ### 现有平台
 ```javascript
