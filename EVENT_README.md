@@ -1,6 +1,5 @@
-[TOC]
-
 # 事件文档
+
 事件以消息广播的方式, 通过[Apache Artemis](https://activemq.apache.org/components/artemis/)进行.
 使用方需通过订阅事件频道来得到广播的消息. 具体的接入方式, 参考Artemis的官方网站, 选用自身合适的方式即可.
 

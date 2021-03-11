@@ -1359,6 +1359,43 @@ stopMusic
 
 没有返回数据
 
+### 得到考勤统计数据
+
+#### name
+
+getAttendanceReport
+
+#### params
+
+```javascript
+{
+  start: string, //开始时间
+  end: string, //结束时间
+}
+```
+
+#### 返回数据
+
+```javascript
+{
+  	public personId: string, //人员ID
+    public personName: string, //人员姓名
+    public deptName: string, //部门名称
+    public attCount: number, //需考勤次数
+    public normalCount: number, //正常考勤次数
+    public absentCount: number, //旷工次数
+    public absentMinutes: number, //旷工时间
+    public earlyCount: number, //早退次数
+    public earlyMinutes: number, //早退时间
+    public lateCount: number, //迟到次数
+    public lateMinutes: number, //迟到时间
+    public overtimeCount: number, //加班次数
+    public overtimeMinutes: number, //加班时间
+}
+```
+
+
+
 # 调试用接口
 
 本章节下的接口用于调试使用

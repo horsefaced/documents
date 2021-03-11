@@ -282,3 +282,21 @@
 1. deviceOnlineStatusChange
 2. deviceAlarm
 3. bacPresentValue //用于更新设备音量
+
+## 考勤系统
+
+### 现有平台
+
+```javascript
+[
+  { sdk: {manufacturer: 'dahua', platform: 'H8900'}},
+]
+```
+
+### 命令列表
+
+1. getAttendanceReport
+
+### 事件列表
+
+1. realData.attendanceResult
