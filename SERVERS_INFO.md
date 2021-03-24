@@ -98,6 +98,8 @@
 
 使用端口: 12140
 
+启动命令: docker run -d --network="host" -v virupaksa:/etc -v virupaksa:/var/log --name dsppa-mag6180 --hostname dsppa-mag6180 dsppa-mag6180-server:latest
+
 ## dh-netsdk-server
 
 使用端口: 12150
@@ -106,7 +108,7 @@
 
 使用端口: 12160
 
-启动命令: sudo docker run -d -p 12160:12160 -v virupaksa:/etc --name dh-u8000 --hostname dh-u8000 dh-u8000-server:latest
+启动命令: sudo docker run -d --network="host" -v virupaksa:/etc --name dh-u8000 --hostname dh-u8000 dh-u8000-server:latest
 
 ## siemens-opc-server
 
