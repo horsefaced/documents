@@ -17,6 +17,7 @@
   { sdk: { manufacturer: 'asrc', platform: 'asrc' } }, //安士润城
   { sdk: { manufacturer: 'dahua', platform: 'firefighting' }}, //大华消防
   { sdk: { manufacturer: 'dsppa', platform: 'mag6180' }}, //迪士普音乐广播系统
+  { sdk: { manufacturer: 'siemens', platform: 'bas-opc'}}, //西门子楼宇自动控制系统
 ]
 ```
 
@@ -906,6 +907,18 @@ H8900系统包括了安防、人脸、门禁、考勤、停车等等系统
     }
 }
 ```
+
+### 西门子楼控系统
+
+只有设备类型deviceType, 无deviceCategory和deviceUnitType
+
+```javascript
+{
+  1: 'ERV', //全热交换器
+}
+```
+
+
 
 ##  设备报警类型
 
@@ -2246,7 +2259,9 @@ H8900系统包括了安防、人脸、门禁、考勤、停车等等系统
     target_open_precentage //目标打开百分比
     ac_mode //空调模式: 0 关闭, 1 自动, 2 吹风, 3 制冷, 4 制热, 5 除湿
     ac_wind_speed //空调风速
+    wind_speed //风速, 数值型, 控制风速时, 使用0到100的数值
     volume //音量
+    key_locked //按键锁定 0:解锁 1:锁定
     status //通用状态, 描述非上述状态中的状态, 主要用于各自系统中设备的状态, 具体对应的 value 和 description 需要参考具体系统的设备状态说明
 
 

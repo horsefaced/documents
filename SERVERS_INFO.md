@@ -108,6 +108,14 @@
 
 启动命令: sudo docker run -d -p 12160:12160 -v virupaksa:/etc --name dh-u8000 --hostname dh-u8000 dh-u8000-server:latest
 
+## siemens-opc-server
+
+使用端口: 12170
+
+## opc-server
+
+使用端口: 从22000开始
+
 ## virupaksa-mock
 
 使用端口：12990

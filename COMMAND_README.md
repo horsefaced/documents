@@ -915,7 +915,39 @@ status 会议状态内容为:
 }
 ```
 
+### 控制智能楼宇设备
+
+#### name
+
+```javascript
+'bacControl'
+```
+
+#### params
+
+```javascript
+{
+  device: {
+    	deviceCode: string, //设备编号
+      deviceType: number, //设备类型
+    	dataSource: string, //子系统名称
+      raw: //保存着对应厂家系统回传的原始数据
+  },
+  name: string, //常量文档中 bacPresentValue的描述, 现在阶段支持: 'switch', 'wind_speed', 'key_locked', 控制值即为说明值
+  value: //相对 name 设置的控制值
+}
+```
+
+#### 返回数据
+
+```javascript
+没有返回值
+```
+
+
+
 ### 打开窗帘
+
 #### name
     ‘openCurtain'
 #### params

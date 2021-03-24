@@ -4,6 +4,18 @@
 
 ## 更新日志
 
+### 2021.03.24 15:30
+
+1. 常量文档
+   1. 厂家列表添加西门子楼宇控制系统 {sdk: {manufacturer: 'siemens', platform: 'bas-opc'}}
+   2. 设备类型添加西门子楼控系统设备说明, 现阶段只有 ERV 全热交换器
+   3. 其它常量中的bacPresentValue添加 wind_speed, key_locked 说明
+2. 系统与命令对应表
+   1. 暖通部分添加西门子楼控系统
+   2. 暖通部分添加basControl控制命令与deviceOnlineStatusChange事件
+3. 命令文档
+   1. 添加 basControl 命令说明
+
 ### 2021.03.22 17:24
 
 1. 常量文档U8000部分添加摄像头故障报警说明
