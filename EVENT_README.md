@@ -820,3 +820,168 @@ realData.devicePosition
 }
 ```
 
+### 无线接入控制系统信息更新
+
+#### 频道名
+
+```
+realData.wacInfo
+```
+
+#### 承载数据
+
+```json
+{
+  "deviceCode": "string, //设备编号",
+  "WACName": "string; //wac名称",
+  "WACIP": "string; //IP地址",
+  "WACMAC": "string; //MAC地址",
+  "WACMask": "string; //子网掩码",
+  "WACSysCpuCostRate": "string; //wac的cpu利用率",
+  "WACTotalMemory": "string; //wac总内存空间",
+  "WACSysMemoryCost": "string; //wac内存占用率",
+  "WACSysRunTime": "time; //wac运行时长",
+  "WACAPOnlineNum": "number; //AP在线数目",
+  "WACAPOfflineNum": "number; //AP离线数目",
+  "WACAPDepositNum": "number; //AP托管数目",
+  "WACAPTotalNum": "number; //AP总数",
+  "WACAPMaxConnectNum": "number; //AP能连接的总数",
+  "WACUserNum": "number; //wac当前在线用户总数",
+  "WACMaxUserNum": "number; //wac允许最大用户数",
+  "WACDiskTable": [{
+    "FilesystemName": "string; //文件系统名",
+    "DiskSize": "string; //磁盘大小",
+    "DiskUsed": "string; //已使用空间",
+    "DiskAvail": "string; //可用空间",
+    "DiskUsedPercent": "string; //使用率"
+  }],
+  "WACDHCPTable": [{
+    "Name": "string; //端口名称",
+    "NumOfTotalIPAddresses": "number; //ip地址池大小",
+    "NumOfLeftIP": "number; //未分配ip地址数",
+    "NumOfOccupyIP": "number; //占用的ip地址数",
+    "StartIP": "string; //起始的IP地址",
+    "EndIP": "string; //终止的IP地址",
+    "IPUsedRatio": "string; //IP地址使用率"
+  }],
+  "SSIDTable": [{
+    "Name": "string; //ssid名称",
+    "Enabled": "string; //是否启用",
+    "IsHided": "string; //是否隐藏",
+    "IsolateUser": "string; //终端之间是否隔离",
+    "SecurityType": "string; //安全类型",
+    "AuthMode": "string; //认证模式",
+    "EncryptType": "string; //加密模式",
+    "VLANId": "string; //vlan id",
+    "MaxUserNum": "number; //最大允许连接的用户数",
+    "MaxSendRate": "string; //终端最大上行速率",
+    "MaxReceiveRate": "string; //终端最大下午速率",
+    "SendRate": "string; //当前上行速率",
+    "ReceiveRate": "string; //当前下午速率",
+    "UserNum": "number; //当前用户数"
+  }]
+}
+```
+
+
+
+### 无线访问接收点信息更新
+
+#### 频道名
+
+```
+realData.apInfo
+```
+
+#### 承载数据
+
+```json
+{
+  	"deviceCode": "string, //设备编号",
+    "APInfoTable": {
+      "Name": "string; //AP名称",
+      "MAC": "string; //MAC地址",
+      "Status": "string; //当前是否在线",
+      "IP": "string; //IP地址",
+      "Mask": "string; //掩码地址",
+      "Model": "string; //型号",
+      "SeriesNum": "string; //序列号",
+      "HardVersion": "string; //硬件版本",
+      "SoftwareVersion": "string; //软件版本",
+      "CpuCost": "string; //CPU利用率",
+      "MemoryCost": "string; //内存利用率",
+      "FlashCost": "string; //内存利用率",
+      "OnlineTime": "string; //在线时长",
+      "RunTime": "string; //运行时长",
+      "InterfaceNum": "number; //物理接口数",
+      "UserNum": "number; //用户数",
+      "GroupName": "string; //所在组名",
+      "SessionNum": "number; //会话数",
+      "SendRate": "string; //发送速率",
+      "ReceiveRate": "string; //接收速率"
+  	},
+    "APRadioInfoTable": [{
+        "Type": "string; //AP类型",
+        "Name": "string; //AP名称",
+        "MAC": "string; //MAC地址",
+        "Mode": "string; //射频模式",
+        "Status": "string; //射频状态",
+        "BeaconCycle": "string; //射频信标周期",
+        "DTIM": "string; //射频DTIM时间间隔",
+        "RTS": "string; //射频RTS阈值",
+        "Channel": "number; //射频信道",
+        "MaxTranPower": "string; //射频最大发射功率",
+        "MaxAcSta": "number; //射频最大关联终端数",
+        "Frequence": "string; //射频频率",
+        "SSID": "string; //加载的ssid",
+        "VLAN": "number; //vlan",
+        "WorkMode": "string; //工作模式",
+        "UseRate": "string; //信道利用率",
+        "TXPower": "string; //发射功率",
+        "Noise": "string; //噪声",
+        "IPAddress": "string; //IP地址"
+      }],
+      "APWirelessInfoTable": [{
+        "Port": "string; //端口名称",
+        "Name": "string; //AP名称",
+        "MAC": "string; //MAC地址",
+        "PortMAC": "string; //端口MAC地址",
+        "PortBandwidth": "number; //端口带宽",
+        "Status": "string; //端口状态",
+        "ReceiveByte": "number; //端口接收流量(bytes)",
+        "ReceiveErrorPacket": "number; //接收错误包数",
+        "ReceivePacket": "number; //接收包数",
+        "ReceiveUnicastPacket": "number; //接收单播包数",
+        "ReceiveBroadcastPacket": "number; //接收广播包数",
+        "DropReceivePacket": "number; //接收丢包数",
+        "SendByte": "number; //端口发送流量(bytes)",
+        "SendErrorPacket": "number; //发送错误包数",
+        "SendBroadcastPacket": "number; //发送广播包数",
+        "SendUnicastPacket": "number; //发送单播包数",
+        "DropSendPacket": "number; //发送丢包数",
+        "SendPacket": "number; //发送包数"
+      }],
+      "APWiredInfoTable": [{
+        "Port": "string; //端口名称",
+        "Name": "string; //AP名称",
+        "MAC": "string; //MAC地址",
+        "HardVersion": "string; //硬件版本",
+        "PortMAC": "string; //端口MAC地址",
+        "PortBandwidth": "number; //端口带宽",
+        "Status": "string; //端口状态",
+        "ReceiveByte": "number; //端口接收流量(bytes)",
+        "ReceiveErrorPacket": "number; //接收错误包数",
+        "ReceivePacket": "number; //接收包数",
+        "ReceiveUnicastPacket": "number; //接收单播包数",
+        "ReceiveBroadcastPacket": "number; //接收广播包数",
+        "DropReceivePacket": "number; //接收丢包数",
+        "SendByte": "number; //端口发送流量(bytes)",
+        "SendErrorPacket": "number; //发送错误包数",
+        "SendUnicastPacket": "number; //发送单播包数",
+        "SendBroadcastPacket": "number; //发送广播包数",
+        "DropSendPacket": "number; //发送丢包数",
+        "SendPacket": "number; //发送包数"
+      }]
+}
+```
+

@@ -108,15 +108,19 @@
 
 使用端口: 12160
 
-启动命令: sudo docker run -d --network="host" -v virupaksa:/etc --name dh-u8000 --hostname dh-u8000 dh-u8000-server:latest
+启动命令: sudo docker run -d --network="host" -v virupaksa:/etc  -v virupaksa:/var/log --name dh-u8000 --hostname dh-u8000 --restart=always dh-u8000-server:latest
 
 ## siemens-opc-server
 
 使用端口: 12170
 
-## opc-server
+启动命令: sudo docker run -d --network="host" -v virupaksa:/etc  -v virupaksa:/var/log --name siemens-opc --hostname siemens-opc --restart=always siemens-opc-server:latest
 
-使用端口: 从22000开始
+## sangfor-wac-snmp-server
+
+使用端口: 12180
+
+启动命令: sudo docker run -d --network="host" -v virupaksa:/etc  -v virupaksa:/var/log --name sangfor-wac-snmp --hostname sangfor-wac-snmp --restart=always sangfor-wac-snmp-server:latest
 
 ## virupaksa-mock
 

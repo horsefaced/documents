@@ -303,3 +303,23 @@
 ### 事件列表
 
 1. realData.attendanceResult
+
+## 无线管理系统
+
+现在有平台
+
+```javascript
+[
+  { sdk: { manufacturer: 'sangfor', platform: 'wac-snmp'}},
+]
+```
+
+### 命令列表
+
+1. getAllDevices
+
+### 事件列表
+
+1. realData.wacInfo
+2. realData.apInfo
+3. realData.DeviceOnlineStatusChange

@@ -18,6 +18,7 @@
   { sdk: { manufacturer: 'dahua', platform: 'firefighting' }}, //大华消防
   { sdk: { manufacturer: 'dsppa', platform: 'mag6180' }}, //迪士普音乐广播系统
   { sdk: { manufacturer: 'siemens', platform: 'bas-opc'}}, //西门子楼宇自动控制系统
+  { sdk: { manufacturer: 'sangfor', platform: 'wac-snmp'}}, //深信服网络管理系统
 ]
 ```
 
@@ -915,6 +916,17 @@ H8900系统包括了安防、人脸、门禁、考勤、停车等等系统
 ```javascript
 {
   1: 'ERV', //全热交换器
+}
+```
+
+### 深信服网络设备
+
+现阶段deviceCategory与deviceType共用同一组参数, 没有deviceUnitType
+
+```javascript
+{
+	  1: 'WAC', //无线接入控制系统
+    2: 'AP', //无线访问接收点
 }
 ```
 
