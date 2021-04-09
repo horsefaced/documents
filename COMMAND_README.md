@@ -1430,6 +1430,70 @@ getAttendanceReport
 
 #### name
 
+getAttendanceRecord
+
+#### params
+
+```javascript
+{
+    start: string, //开始时间
+    end: string, //结束时间
+    personCode: string, //员工编号, 可选, 如果没有传送员工编号则查询全部人员
+}
+```
+
+#### 返回数据
+
+```javascript
+{
+    personId?: string; //用户ID
+    personCode?: string;    //人员编号
+    personName?: string; //人员名称
+
+    checkInTime?: number; //签到时间
+    checkInStatus?: string; //考勤签入签出状态, 具体内容参考常量文档
+    checkOutTime?: number; //签出时间
+    checkOutStatus?: string; //考勤签入签出状态, 具体内容参考常量文档
+
+    siteId?: string; //考勤点ID
+    siteName?: string; //考勤点名称
+}
+```
+
+### 得到考勤刷卡纪录
+
+#### name
+
+getAttendanceSwipeCardRecord
+
+#### params
+
+```javascript
+{
+    start: string, //开始时间
+    end: string, //结束时间
+    personCode: string, //员工编号, 可选, 如果没有传送员工编号则查询全部人员
+}
+```
+
+### 返回数据
+
+```javascript
+{
+				public personId: string, //用户ID
+        public personCode: string, //人员编号
+        public personName: string, //人员名称
+
+        public time: number, //刷卡时间
+        public type: number, //刷卡类型
+        public cardNo: string, //刷卡卡号
+
+        public siteId: string, //考勤点ID
+        public siteName: string, //考勤点名称
+        public reportTime: number, //上报时间
+}
+```
+
 
 
 # 调试用接口
