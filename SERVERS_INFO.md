@@ -10,7 +10,7 @@
 
 使用端口：58080
 
-启动命令：docker run -d --network="host" -v videoserver:/etc -v videoserver-assets:/opt/changer/server/videoserver/assets --name videoserver --restart=always videoserver:latest
+启动命令：docker run -d -p 58080:8090 -v videoserver:/etc -v videoserver-assets:/opt/changer/server/videoserver/assets --name videoserver --restart=always videoserver:latest
 
 ## virupaksa
 
