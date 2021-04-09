@@ -52,6 +52,7 @@
 3. basControl
 
 ### 事件列表
+
 1. bacPresentValue 暖通设备的当前值, 根据不同设备有不同的值, 参考常量文档中的bacPresentValue一节的说明
 2. bacAlarm 暖通设备的报警信息
 3. deviceOnlineStatusChange

@@ -32,7 +32,7 @@
 
 使用端口：12030
 
-启动命令: docker run -d --network="host" -v virupaksa:/etc -v virupaksa:/var/log --name itc-server --hostname itc-server itc-server:latest
+启动命令: docker run -d --network="host" -v virupaksa:/etc -v virupaksa:/var/log --name itc-server --hostname itc-server  --restart=always itc-server:latest
 
 ## metasys-server
 
@@ -42,7 +42,7 @@
 
 使用端口：12050
 
-启动命令: docker run -d --network="host" -v virupaksa:/etc -v virupaksa:/var/log --name zytk-server --hostname zytk zytk-server:latest
+启动命令: docker run -d --network="host" -v virupaksa:/etc -v virupaksa:/var/log --name zytk-server --hostname zytk  --restart=always zytk-server:latest
 
 ## dh-dpsdk-server
 
@@ -54,7 +54,7 @@
 
 使用端口：12070
 
-启动命令: docker run -d --network="host" -v virupaksa:/etc -v virupaksa:/var/log --name dh-firefighting --hostname dh-firefighting dh-firefighting-server:latest
+启动命令: docker run -d --network="host" -v virupaksa:/etc -v virupaksa:/var/log --name dh-firefighting --hostname dh-firefighting  --restart=always dh-firefighting-server:latest
 
 ## innopro-8100-server
 
@@ -88,7 +88,7 @@
 
 使用端口: 12120
 
-启动命令: docker run -d --network="host" -v virupaksa:/etc -v virupaksa:/var/log --name lifesmart-lgc --hostname lifesmart-lgc lifesmart-lgc-server:latest
+启动命令: docker run -d --network="host" -v virupaksa:/etc -v virupaksa:/var/log --name lifesmart-lgc --hostname lifesmart-lgc  --restart=always lifesmart-lgc-server:latest
 
 ## cmb-cloud-server
 
@@ -98,7 +98,7 @@
 
 使用端口: 12140
 
-启动命令: docker run -d --network="host" -v virupaksa:/etc -v virupaksa:/var/log --name dsppa-mag6180 --hostname dsppa-mag6180 dsppa-mag6180-server:latest
+启动命令: docker run -d --network="host" -v virupaksa:/etc -v virupaksa:/var/log --name dsppa-mag6180 --hostname dsppa-mag6180  --restart=always dsppa-mag6180-server:latest
 
 ## dh-netsdk-server
 

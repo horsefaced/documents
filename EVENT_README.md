@@ -138,9 +138,9 @@
     personName?: string; //人员名称
 
     checkInTime?: number; //签到时间
-    checkInStatus?: string; //签到状态
+    checkInStatus?: string; //考勤签入签出状态, 具体内容参考常量文档
     checkOutTime?: number; //签出时间
-    checkOutStatus?: string; //签出状态
+    checkOutStatus?: string; //考勤签入签出状态, 具体内容参考常量文档
 
     siteId?: string; //考勤ID
     siteName?: string; //考勤点名称
@@ -577,6 +577,7 @@
 
 ### 动环检测报警
 #### 频道名
+
     realData.pessAlarm
 #### 承载数据
 ```javascript
