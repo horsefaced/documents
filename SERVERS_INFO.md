@@ -110,11 +110,11 @@
 
 启动命令: sudo docker run -d --network="host" -v virupaksa:/etc  -v virupaksa:/var/log --name dh-u8000 --hostname dh-u8000 --restart=always dh-u8000-server:latest
 
-## siemens-opc-server
+## siemens-bas-opc-server
 
 使用端口: 12170
 
-启动命令: sudo docker run -d --network="host" -v virupaksa:/etc  -v virupaksa:/var/log --name siemens-opc --hostname siemens-opc --restart=always siemens-opc-server:latest
+启动命令: sudo docker run -d --network="host" -v virupaksa:/etc  -v virupaksa:/var/log --name siemens-bas-opc --hostname siemens-bas-opc --restart=always siemens-bas-opc-server:latest
 
 ## sangfor-wac-snmp-server
 
