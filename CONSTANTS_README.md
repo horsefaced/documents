@@ -19,6 +19,7 @@
   { sdk: { manufacturer: 'dsppa', platform: 'mag6180' }}, //迪士普音乐广播系统
   { sdk: { manufacturer: 'siemens', platform: 'bas-opc'}}, //西门子楼宇自动控制系统
   { sdk: { manufacturer: 'sangfor', platform: 'wac-snmp'}}, //深信服网络管理系统
+  { sdk: { manufacturer: 'zytk', platform: 'zytk'}}, //正元食堂管理系统
 ]
 ```
 

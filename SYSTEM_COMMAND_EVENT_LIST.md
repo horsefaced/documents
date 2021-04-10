@@ -1,4 +1,5 @@
 # 系统与命令对应表
+
 本文档解释了现有个采集系统实现的命令列表, 供对接参考使用
 
 ## 会议系统
@@ -58,7 +59,18 @@
 3. deviceOnlineStatusChange
 
 ## 食堂消费系统
+### 现有平台
+
+```javascript
+[
+  { sdk: {manufacturer: 'zytk', platform: 'zytk'}}
+]
+```
+
+
+
 ### 命令列表
+
 1. getConsumeTurnover 得到消费流水
 
 ### 命令列表
