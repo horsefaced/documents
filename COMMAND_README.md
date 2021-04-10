@@ -977,8 +977,9 @@ status 会议状态内容为:
 #### params
 ```javascript
 {
-    start: string,//查询的开始时间, 可选, 如果不填则为当天之前一年
-    end: string, //查询的结束时间, 可选, 如果不填则为当天之后的一年
+    	start: string,//查询的开始时间, 可选, 如果不填则为当天之前一年
+    	end: string, //查询的结束时间, 可选, 如果不填则为当天之后的一年
+      personCode: string, //人员编号, 可选, 如果不填则为查询所有人
 }
 ```
 #### 返回数据
@@ -988,6 +989,7 @@ status 会议状态内容为:
 
         cardNumber?: string; //交易卡号
         personName?: string; //姓名
+        personCode: string; //人员编号
         personDepartment?: string; //人员所在部门
 
         dealerID?: string; //商户号
