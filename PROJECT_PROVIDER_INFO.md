@@ -14,7 +14,7 @@
 | 背景音乐系统               | { sdk: { manufacturer: 'dahua', platform: 'firefighting' }} |
 | 电动窗帘控制系统           | { sdk: { manufacturer: 'lifesmart', platform: 'lgc'} },     |
 | 会议管理系统               | { sdk: { manufacturer: 'itc', platform: 'cloud' } },        |
-| 智能停车管理系统           | { sdk: { manufacturer: 'dahua', platform: 'H8900' } },      |
+| 智能停车管理系统           | 暂无提供                                                    |
 | 移动端-考勤                | { sdk: { manufacturer: 'dahua', platform: 'H8900' } },      |
 | 移动端-员工消费记录        | { sdk: {manufacturer: 'zytk', platform: 'zytk'}}            |
 | 移动端-会议议程            | { sdk: { manufacturer: 'itc', platform: 'cloud' } }         |
