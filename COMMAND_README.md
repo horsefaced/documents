@@ -848,7 +848,7 @@
         avatar?: string; //头像
         checkinTime?: number; //签到时间
     }]; 
-    agenda: [{
+    agenda: [{  //会议议程
         meetingId?: number; //会议id
         subject?: string; //会议议程主题
         time?: number; //开始时间
@@ -1403,8 +1403,9 @@ getAttendanceReport
 
 ```javascript
 {
-  start: string, //开始时间
-  end: string, //结束时间
+  	start: string, //开始时间
+	  end: string, //结束时间
+    personName:string, //人员姓名, 可选, 如果不传则查询所有人
 }
 ```
 
