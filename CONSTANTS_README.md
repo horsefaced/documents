@@ -6,7 +6,7 @@
 [
   { sdk: { manufacturer: 'itc', platform: 'cloud' } }, //itc会议系统
   { sdk: { manufacturer: 'lifesmart', platform: 'ToB' } }, //云起
- 	{ sdk: { manufacturer: 'lifesmart', platform: 'lgc'} },//云起
+  { sdk: { manufacturer: 'lifesmart', platform: 'lgc'} },//云起
   { sdk: { manufacturer: 'metasys', platform: 'metasys' } }, //江森自控
   { sdk: { manufacturer: 'dahua', platform: 'H8900' } }, //大华H8900
   { sdk: { manufacturer: 'dahua', platform: 'dpsdk' } }, //大华基础服务
@@ -20,6 +20,7 @@
   { sdk: { manufacturer: 'siemens', platform: 'bas-opc'}}, //西门子楼宇自动控制系统
   { sdk: { manufacturer: 'sangfor', platform: 'wac-snmp'}}, //深信服网络管理系统
   { sdk: { manufacturer: 'zytk', platform: 'zytk'}}, //正元食堂管理系统
+  { sdk: { manufacturer: 'cmb', platform: 'cloud' }}, //招商银行云服务
 ]
 ```
 
