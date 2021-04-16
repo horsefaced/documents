@@ -848,7 +848,7 @@
         avatar?: string; //头像
         checkinTime?: number; //签到时间
     }]; 
-    agenda: [{  //会议议程
+    agendas: [{  //会议议程
         meetingId?: number; //会议id
         subject?: string; //会议议程主题
         time?: number; //开始时间

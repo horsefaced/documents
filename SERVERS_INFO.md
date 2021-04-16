@@ -18,6 +18,10 @@
 
 启动命令：docker run -d --network="host" -v virupaksa:/etc -v virupaksa:/var/log --name virupaksa --hostname virupaksa --restart=always virupaksa
 
+## mongodb
+
+启动命令: docker run -d --restart=always --network="host" -v mongo-data:/data/db --name mongo mongo
+
 ## dh-h8900-server
 
 使用端口： 12010
@@ -93,6 +97,10 @@
 ## cmb-cloud-server
 
 使用端口: 12130
+
+启动命令: docker run -d --network="host" -v virupaksa:/etc -v virupaksa:/var/log --name cmb-cloud-server --hostname cmb-cloud --restart=always cmb-cloud-server
+
+监听停车场: IP:12130/cmbparking
 
 ## dsppa-mag6180-server
 
