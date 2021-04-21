@@ -197,6 +197,7 @@
 ### 门禁关门
 
 #### name
+
     'closeDoor'
 
 #### params
