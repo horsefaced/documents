@@ -35,8 +35,11 @@
 2. getAllBACPresentValue 窗帘控制器设备的当前状态中, name=switch的状态描述了窗帘的开关状态, 1:打开、0.5:半开、0:关闭、-1:未知, value为数值部分, description为中文说明部分
 3. openCurtain
 4. closeCurtain
+5. setSceneInArea
+6. getAllScenesInAreas
 
 ### 事件列表
+
 1. bacPresentValue 窗帘控制器设备的当前状态
 
 ## 暖通系统

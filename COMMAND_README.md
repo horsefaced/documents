@@ -1480,7 +1480,7 @@ getAttendanceSwipeCardRecord
 }
 ```
 
-### 返回数据
+#### 返回数据
 
 ```javascript
 {
@@ -1498,7 +1498,50 @@ getAttendanceSwipeCardRecord
 }
 ```
 
+### 得到区域与场景对应信息
 
+#### name
+
+getAllScenesInAreas
+
+#### params
+
+```javascript
+无需参数
+```
+
+#### 返回数据
+
+```javascript
+{
+  	id: string, //区域ID
+    code: string, //区域编码
+    name: string, //区域名称
+    scenes: [{     //区域下可使用的场景列表
+        id: string, //场景ID
+        name: string, //场景名称
+    }], 
+}
+```
+
+### 设置区域中的场景
+
+#### name
+
+setSceneInArea
+
+#### params
+
+```javascript
+{
+  	areaCode: string, //区域编码
+    sceneId: string, //场景id
+}
+```
+
+#### 返回数据
+
+没有返回值
 
 # 调试用接口
 

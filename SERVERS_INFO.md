@@ -58,7 +58,7 @@
 
 使用端口：12070
 
-启动命令: docker run -d --network="host" -v virupaksa:/etc -v virupaksa:/var/log --name dh-firefighting --hostname dh-firefighting  --restart=always dh-firefighting-server:latest
+启动命令: docker run -d --network="host" -v virupaksa:/etc -v virupaksa:/var/log --name dh-firefighting-server --hostname dh-firefighting  --restart=always dh-firefighting-server:latest
 
 ## innopro-8100-server
 
@@ -92,7 +92,7 @@
 
 使用端口: 12120
 
-启动命令: docker run -d --network="host" -v virupaksa:/etc -v virupaksa:/var/log --name lifesmart-lgc --hostname lifesmart-lgc  --restart=always lifesmart-lgc-server:latest
+启动命令: docker run -d --network="host" -v virupaksa:/etc -v virupaksa:/var/log --name lifesmart-lgc-server --hostname lifesmart-lgc  --restart=always lifesmart-lgc-server:latest
 
 ## cmb-cloud-server
 
@@ -106,7 +106,7 @@
 
 使用端口: 12140
 
-启动命令: docker run -d --network="host" -v virupaksa:/etc -v virupaksa:/var/log --name dsppa-mag6180 --hostname dsppa-mag6180  --restart=always dsppa-mag6180-server:latest
+启动命令: docker run -d --network="host" -v virupaksa:/etc -v virupaksa:/var/log --name dsppa-mag6180-server --hostname dsppa-mag6180  --restart=always dsppa-mag6180-server:latest
 
 ## dh-netsdk-server
 
@@ -116,19 +116,25 @@
 
 使用端口: 12160
 
-启动命令: sudo docker run -d --network="host" -v virupaksa:/etc  -v virupaksa:/var/log --name dh-u8000 --hostname dh-u8000 --restart=always dh-u8000-server:latest
+启动命令: sudo docker run -d --network="host" -v virupaksa:/etc  -v virupaksa:/var/log --name dh-u8000-server --hostname dh-u8000 --restart=always dh-u8000-server:latest
 
 ## siemens-bas-opc-server
 
 使用端口: 12170
 
-启动命令: sudo docker run -d --network="host" -v virupaksa:/etc  -v virupaksa:/var/log --name siemens-bas-opc --hostname siemens-bas-opc --restart=always siemens-bas-opc-server:latest
+启动命令: sudo docker run -d --network="host" -v virupaksa:/etc  -v virupaksa:/var/log --name siemens-bas-opc-server --hostname siemens-bas-opc --restart=always siemens-bas-opc-server:latest
 
 ## sangfor-wac-snmp-server
 
 使用端口: 12180
 
-启动命令: sudo docker run -d --network="host" -v virupaksa:/etc  -v virupaksa:/var/log --name sangfor-wac-snmp --hostname sangfor-wac-snmp --restart=always sangfor-wac-snmp-server:latest
+启动命令: sudo docker run -d --network="host" -v virupaksa:/etc  -v virupaksa:/var/log --name sangfor-wac-snmp-server --hostname sangfor-wac-snmp --restart=always sangfor-wac-snmp-server:latest
+
+## top beyond-toilet-server
+
+使用端口: 12190
+
+
 
 ## virupaksa-mock
 
