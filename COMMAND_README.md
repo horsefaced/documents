@@ -179,15 +179,12 @@
     'openDoor'
 
 #### params
-需要开门的设备数组, 以下只显示最必要的内容, 方便调用者在不方便提供其它内容时进行调用
+需要开门的设备, 以下只显示最必要的内容, 方便调用者在不方便提供其它内容时进行调用
 ```javascript
 {
-    Channels: [{                //设备通道号列表
-        Id?: String; //通道号
-    }],
-
-    Datasource: String; //子系统名称,
-    Raw: //保存着对应厂家系统回传的原始数据
+    deviceCode: string; //设备编码
+    dataSource: String; //子系统名称,
+    raw: //保存着对应厂家系统回传的原始数据
 }
 ```
 
@@ -201,14 +198,11 @@
     'closeDoor'
 
 #### params
-需要关门的设备数组, 以下只显示最必要的内容, 方便调用者在不方便提供其它内容时进行调用
+需要关门的设备, 以下只显示最必要的内容, 方便调用者在不方便提供其它内容时进行调用
 ```javascript
 {
-    channels: [{                //设备通道号列表
-        id?: string; //通道号
-    }],
-
-    dataSource: string; //子系统名称,
+    deviceCode: string; //设备编码
+    dataSource: String; //子系统名称,
     raw: //保存着对应厂家系统回传的原始数据
 }
 ```
@@ -222,14 +216,11 @@
     'doorStayOpen'
 
 #### params
-需要常开的设备数组, 以下只显示最必要的内容, 方便调用者在不方便提供其它内容时进行调用
+需要常开的设备, 以下只显示最必要的内容, 方便调用者在不方便提供其它内容时进行调用
 ```javascript
 {
-    channels: [{                //设备通道号列表
-        id?: string; //通道号
-    }],
-
-    dataSource: string; //子系统名称,
+    deviceCode: string; //设备编码
+    dataSource: String; //子系统名称,
     raw: //保存着对应厂家系统回传的原始数据
 }
 ```
@@ -243,15 +234,12 @@
     'doorStayClose'
 
 #### params
-需要常关的设备数组, 以下只显示最必要的内容, 方便调用者在不方便提供其它内容时进行调用
+需要常关的设备, 以下只显示最必要的内容, 方便调用者在不方便提供其它内容时进行调用
 ```javascript
 {
-    channels: [{                //设备通道号列表
-        id?: string; //通道号
-    }],
-
-    dataSource: string; //子系统名称,
-    raw: {} //保存着对应厂家系统回传的原始数据
+    deviceCode: string; //设备编码
+    dataSource: String; //子系统名称,
+    raw: //保存着对应厂家系统回传的原始数据
 }
 ```
 
@@ -978,8 +966,8 @@ status 会议状态内容为:
 #### params
 ```javascript
 {
-    	start: string,//查询的开始时间, 可选, 如果不填则为当天之前一年
-    	end: string, //查询的结束时间, 可选, 如果不填则为当天之后的一年
+    	start: string,//查询的开始时间, 可选, 如果不填则为当天之前一月
+    	end: string, //查询的结束时间, 可选, 如果不填则为当天
       personCode: string, //人员编号, 可选, 如果不填则为查询所有人
 }
 ```
@@ -1534,8 +1522,10 @@ setSceneInArea
 
 ```javascript
 {
-  	areaCode: string, //区域编码
-    sceneId: string, //场景id
+  		areaCode: string, //区域编码
+    	sceneId: string, //场景id
+      
+      
 }
 ```
 

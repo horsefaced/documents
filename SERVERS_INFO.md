@@ -130,11 +130,11 @@
 
 启动命令: sudo docker run -d --network="host" -v virupaksa:/etc  -v virupaksa:/var/log --name sangfor-wac-snmp-server --hostname sangfor-wac-snmp --restart=always sangfor-wac-snmp-server:latest
 
-## top beyond-toilet-server
+## topbeyond-toilet-server
 
 使用端口: 12190
 
-
+启动命令: docker run -d --network="host" -v virupaksa:/etc -v virupaksa:/var/log --name topbeyond-toilet-server --hostname topbeyond-toilet topbeyond-toilet-server:latest
 
 ## virupaksa-mock
 
