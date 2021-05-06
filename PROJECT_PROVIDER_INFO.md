@@ -23,15 +23,15 @@
 
 ## 武汉昙华林
 
-| 子系统         | 对应厂家                                                 |
-| -------------- | -------------------------------------------------------- |
-| 视频监控系统   | { sdk: { manufacturer: 'dahua', platform: 'H8900' } }    |
-| 广播系统       | { sdk: { manufacturer: 'dsppa', platform: 'mag6180' }}   |
-| 无线AP管理系统 | { sdk: { manufacturer: 'sangfor', platform: 'wac-snmp'}} |
-| 消防系统       | 暂无提供                                                 |
-| 智能厕所系统   | 暂无提供                                                 |
-| 车辆管理       | 暂无提供                                                 |
-| 门禁管理       | 暂无提供                                                 |
+| 子系统         | 对应厂家                                                  |
+| -------------- | --------------------------------------------------------- |
+| 视频监控系统   | { sdk: { manufacturer: 'dahua', platform: 'H8900' } }     |
+| 广播系统       | { sdk: { manufacturer: 'dsppa', platform: 'mag6180' }}    |
+| 无线AP管理系统 | { sdk: { manufacturer: 'sangfor', platform: 'wac-snmp'}}  |
+| 消防系统       | 暂无提供                                                  |
+| 智能厕所系统   | { sdk: { manufacturer: 'topbeyond', platform: 'toilet'},} |
+| 车辆管理       | 暂无提供                                                  |
+| 门禁管理       | 暂无提供                                                  |
 
 ## 深圳龙华观澜学校
 

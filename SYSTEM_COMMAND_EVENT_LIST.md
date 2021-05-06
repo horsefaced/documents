@@ -318,7 +318,7 @@
 
 ### 事件列表
 
-1. realData.attendanceResult
+1. attendanceResult
 
 ## 无线管理系统
 
@@ -336,6 +336,25 @@
 
 ### 事件列表
 
-1. realData.wacInfo
-2. realData.apInfo
-3. realData.DeviceOnlineStatusChange
+1. wacInfo
+2. apInfo
+3. deviceOnlineStatusChange
+
+## 智能厕所管理系统
+
+现有平台
+
+```javascript
+[
+  { sdk: { manufacturer: 'topbeyond', platform: 'toilet'},} //鼎臻智能厕所系统
+]
+```
+
+### 命令列表
+
+1. getAllDevices
+
+### 事件列表
+
+1. toiletInfo
+2. deviceOnlineStatusChange

@@ -880,9 +880,9 @@ realData.wacInfo
     "VLANId": "string; //vlan id",
     "MaxUserNum": "number; //最大允许连接的用户数",
     "MaxSendRate": "string; //终端最大上行速率",
-    "MaxReceiveRate": "string; //终端最大下午速率",
+    "MaxReceiveRate": "string; //终端最大下载速率",
     "SendRate": "string; //当前上行速率",
-    "ReceiveRate": "string; //当前下午速率",
+    "ReceiveRate": "string; //当前下载速率",
     "UserNum": "number; //当前用户数"
   }]
 }
@@ -989,4 +989,105 @@ realData.apInfo
   }]
 }
 ```
+
+### 智能厕所数据信息
+
+#### 频道名
+
+```javascript
+realData.toiletInfo
+```
+
+#### 承载数据
+
+其中打问号的数据需要注意很可能不存在这方面的数据, 当不存在的时候, 数据字段也不会存在于返回的承载数据中.
+
+```javascript
+{
+  "deviceId": "string; //设备ID, 即厕所ID",
+  "deviceCode": "string; //设备编码, 即厕所编码",
+  "deviceName": "string; //厕所名称",
+  "todayPassenagerFlow": number?, //今日人流
+  "totalPassengerFlow": number?, //总人流
+  "maleTemperature": number?, //男厕温度
+  "maleHumidity": number?, //男厕湿度
+  'maleH2S': number?, //'男厕硫化氢'
+  'maleAmmonia': number?, //男厕氨气
+  'maleVOC': number?, //男厕VOC
+	'femaleTemperature': number?, //女厕温度
+  'femaleHumidity': number?, //女厕湿度
+  'femaleH2S': number?, //女厕硫化氢
+  'femaleAmmonia': number?, //'女厕氨气'
+  'femaleVOC': number?,//'女厕VOC'
+  'femalePassengerFlow': number?, //'女厕日客流量'
+  'energy':number?, // '用电量'
+  "maleRooms": [  //男厕蹲位情况
+    {
+      "id": "string", //蹲位ID
+      "status": number, //蹲位状态, 0: 空闲、1: 占用、2: 故障
+      "description": string, //蹲位状态的中文描述
+    },
+  ],
+  "femaleRooms": [ //女厕蹲位情况
+    {
+      "id": "string", //蹲位ID
+      "status": number, //蹲位状态, 0: 空闲、1: 占用、2: 故障
+      "description": string, //蹲位状态的中文描述
+    },
+  ],
+  "thirdRooms": [ //第三卫生间情况
+    {
+      "id": "string", //蹲位ID
+      "status": number, //蹲位状态, 0: 空闲、1: 占用、2: 故障
+      "description": string, //蹲位状态的中文描述
+    },
+  ],
+  "noBarrierRooms": [ //无障碍卫生间情况
+    {
+      "id": "string", //蹲位ID
+      "status": number, //蹲位状态, 0: 空闲、1: 占用、2: 故障
+      "description": string, //蹲位状态的中文描述
+    },    
+  ],
+  "momInfantRooms": [  //母婴卫生间情况
+    {
+      "id": "string", //蹲位ID
+      "status": number, //蹲位状态, 0: 空闲、1: 占用、2: 故障
+      "description": string, //蹲位状态的中文描述
+    },    
+  ],
+  "maleRoomStatistic": { //男厕所蹲位情况统计
+    "empty": number, //空闲数
+    "occupy": number, //占用数
+    "fault": number, //故障数
+  },
+  "femaleRoomStatistic": { //女厕蹲位情况统计
+    "empty": number, //空闲数
+    "occupy": number, //占用数
+    "fault": number, //故障数
+  },
+  "thirdRoomStatistic": {  //第三卫生间蹲位情况统计
+    "empty": number, //空闲数
+    "occupy": number, //占用数
+    "fault": number, //故障数
+  },
+  "noBarrierRoomStatistic": {  //无障碍卫生间情况统计
+    "empty": number, //空闲数
+    "occupy": number, //占用数
+    "fault": number, //故障数
+  },
+  "momInfantRoomStatistic": { //母婴卫生间情况统计
+    "empty": number, //空闲数
+    "occupy": number, //占用数
+    "fault": number, //故障数
+  },
+  "roomStatistic": {  //蹲位总的统计
+    "empty": number, //空闲数
+    "occupy": number, //占用数
+    "fault": number, //故障数
+  }
+}
+```
+
+
 

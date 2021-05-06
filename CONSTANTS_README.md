@@ -21,6 +21,7 @@
   { sdk: { manufacturer: 'sangfor', platform: 'wac-snmp'}}, //深信服网络管理系统
   { sdk: { manufacturer: 'zytk', platform: 'zytk'}}, //正元食堂管理系统
   { sdk: { manufacturer: 'cmb', platform: 'cloud' }}, //招商银行云服务
+  { sdk: { manufacturer: 'topbeyond', platform: 'toilet'},} //鼎臻智能厕所系统
 ]
 ```
 
@@ -926,6 +927,24 @@ H8900系统包括了安防、人脸、门禁、考勤、停车等等系统
 	  1: 'WAC', //无线接入控制系统
     2: 'AP', //无线访问接收点
 }
+```
+
+### 智能厕所设备
+
+只使用deviceType
+
+```json
+{
+	1: 'toilet', //厕所(同时包含男厕与女厕所)
+}
+```
+
+现在阶段这个分类适用于下列厂家
+
+```json
+[
+  { sdk: { manufacturer: 'topbeyond', platform: 'toilet'},} //鼎臻智能厕所系统
+]
 ```
 
 
