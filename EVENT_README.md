@@ -1021,16 +1021,16 @@ realData.toiletInfo
   "totalPassengerFlow": number?, //总人流
   "maleTemperature": number?, //男厕温度
   "maleHumidity": number?, //男厕湿度
-  'maleH2S': number?, //'男厕硫化氢'
-  'maleAmmonia': number?, //男厕氨气
-  'maleVOC': number?, //男厕VOC
-	'femaleTemperature': number?, //女厕温度
-  'femaleHumidity': number?, //女厕湿度
-  'femaleH2S': number?, //女厕硫化氢
-  'femaleAmmonia': number?, //'女厕氨气'
-  'femaleVOC': number?,//'女厕VOC'
-  'femalePassengerFlow': number?, //'女厕日客流量'
-  'energy':number?, // '用电量'
+  "maleH2S": number?, //"男厕硫化氢"
+  "maleAmmonia": number?, //男厕氨气
+  "maleVOC": number?, //男厕VOC
+	"femaleTemperature": number?, //女厕温度
+  "femaleHumidity": number?, //女厕湿度
+  "femaleH2S": number?, //女厕硫化氢
+  "femaleAmmonia": number?, //"女厕氨气"
+  "femaleVOC": number?,//"女厕VOC"
+  "femalePassengerFlow": number?, //"女厕日客流量"
+  "energy":number?, // "用电量"
   "maleRooms": [  //男厕蹲位情况
     {
       "id": "string", //蹲位ID
