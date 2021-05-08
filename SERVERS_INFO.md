@@ -60,6 +60,8 @@
 
 启动命令: docker run -d --network="host" -v virupaksa:/etc -v virupaksa:/var/log --name dh-firefighting-server --hostname dh-firefighting  --restart=always dh-firefighting-server:latest
 
+其它操作: 需要把各个项目自己的消防设备列表形成的csv文件拷贝至配置目录中
+
 ## innopro-8100-server
 
 使用端口：12080

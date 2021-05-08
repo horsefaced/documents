@@ -231,8 +231,10 @@
 ]
 ```
 ### 命令列表
-暂时没有
+1. getAllDevices
+
 ### 事件列表
+
 1. deviceAlarm
 
 ## 云台操作
