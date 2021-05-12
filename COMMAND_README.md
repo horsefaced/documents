@@ -996,7 +996,33 @@ status 会议状态内容为:
     }
 ```
 
+### 根据人员编号得到账户余额
+
+#### name
+
+```
+'getAccountBalance'
+```
+
+#### params
+
+```javascript
+{
+  personCode: string //人员编号
+}
+```
+
+#### 返回数据
+
+```javascript
+{
+  	personCode: string, //人员编号
+    balance: number, //账户余额
+}
+```
+
 ### 得到访客列表
+
 #### name
 getVisitorRecords
 #### params
