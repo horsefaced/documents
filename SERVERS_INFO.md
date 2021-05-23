@@ -56,11 +56,19 @@
 
 ## dh-firefighting-server
 
-使用端口：12070
+使用端口：12070, 12071
 
 启动命令: docker run -d --network="host" -v virupaksa:/etc -v virupaksa:/var/log --name dh-firefighting-server --hostname dh-firefighting  --restart=always dh-firefighting-server:latest
 
 其它操作: 需要把各个项目自己的消防设备列表形成的csv文件拷贝至配置目录中
+
+额外文件:
+
+| rawData.csv | 设备列表 | 第一列名称, 第二列deviceCode,第三列th_position |
+| ----------- | -------- | ---------------------------------------------- |
+|             |          |                                                |
+
+
 
 ## innopro-8100-server
 
@@ -126,11 +134,25 @@
 
 启动命令: sudo docker run -d --network="host" -v virupaksa:/etc  -v virupaksa:/var/log --name siemens-bas-opc-server --hostname siemens-bas-opc --restart=always siemens-bas-opc-server:latest
 
+额外文件:
+
+| data.json | 直接可以通过getAllDevices返回的格式设备列表 | 通过processData.js针对BA系统OPC点位表.csv生成 |
+| --------- | ------------------------------------------- | --------------------------------------------- |
+|           |                                             |                                               |
+
+
+
 ## sangfor-wac-snmp-server
 
 使用端口: 12180
 
 启动命令: sudo docker run -d --network="host" -v virupaksa:/etc  -v virupaksa:/var/log --name sangfor-wac-snmp-server --hostname sangfor-wac-snmp --restart=always sangfor-wac-snmp-server:latest
+
+额外文件: 
+
+| deviceNames.csv | 配置设备名 | 第一列为deviceCode, 第二列为设备名称 |
+| --------------- | ---------- | ------------------------------------ |
+|                 |            |                                      |
 
 ## topbeyond-toilet-server
 
