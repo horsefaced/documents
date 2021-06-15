@@ -160,7 +160,15 @@
 
 启动命令: docker run -d --network="host" -v virupaksa:/etc -v virupaksa:/var/log --name topbeyond-toilet-server --hostname topbeyond-toilet topbeyond-toilet-server:latest
 
+## zgkon-ecs-server
+
+使用端口: 12200
+
+启动命令: docker run -d --network="host" -v virupaksa:/etc -v virupaksa:/var/log --name zgkon-ecs-server --hostname zgkon-ecs zgkon-ecs-server:latest
+
 ## virupaksa-mock
 
 使用端口：12990
+
+启动命令: docker run -d -p 12000:12990 -v virupaksa-mock:/etc -v virupaksa-mock:/var/log --name virupaksa-mock --hostname virupaksa-mock --restart=always virupaksa-mock
 

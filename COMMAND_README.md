@@ -1582,7 +1582,7 @@ hostname: 子系统名称如：dh-h8900, dh-dpsdk 等
 
 time：需要得到的日志日期，格式为 YYYYMMDD，如 20201120
 
-### 得到设备流地址
+## 得到设备流地址
 
 url: /video/:hostname/:deviceId/:channelId/:isMain
 
@@ -1593,6 +1593,22 @@ hostname: 子系统名称如：dh-h8900, hk-openapi等
 isMain: 是否为主流, 1为是, 0为辅流
 
 示例: /video/hk-openapi/ef8bf8bd36ab472c8bfae0c7dd99c17a/1/1, 表示得到 hk-openapi 下的设备id为ef8bf8bd36ab472c8bfae0c7dd99c17a的主流
+
+## 发送自定义的消息
+
+url: /mqtt
+
+method: POST
+
+data:
+
+```json
+{
+  "name": "要发送的事件名称",
+  "data": {} //要发送的事件内容
+}
+
+
 
 
 

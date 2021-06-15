@@ -21,7 +21,8 @@
   { sdk: { manufacturer: 'sangfor', platform: 'wac-snmp'}}, //深信服网络管理系统
   { sdk: { manufacturer: 'zytk', platform: 'zytk'}}, //正元食堂管理系统
   { sdk: { manufacturer: 'cmb', platform: 'cloud' }}, //招商银行云服务
-  { sdk: { manufacturer: 'topbeyond', platform: 'toilet'},} //鼎臻智能厕所系统
+  { sdk: { manufacturer: 'topbeyond', platform: 'toilet'},}, //鼎臻智能厕所系统
+  { sdk: { manufacturer: 'zgkon', platform: 'environment-control-system' },}, //中广控环境控制系统
 ]
 ```
 

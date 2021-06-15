@@ -86,6 +86,7 @@
 ```
 
 ### 访客登记记录
+
 #### 频道名
     realData.visitorCheck
 #### 承载数据

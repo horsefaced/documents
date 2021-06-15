@@ -302,7 +302,7 @@
 
 1. deviceOnlineStatusChange
 2. deviceAlarm
-3. bacPresentValue //用于更新设备音量
+3. bacPresentValue //用于更新设备音量, 当前播放音乐
 
 ## 考勤系统
 
@@ -360,3 +360,22 @@
 
 1. toiletInfo
 2. deviceOnlineStatusChange
+
+## 空气质量系统
+
+现有平台
+
+```javascript
+[
+  {sdk: { manufacturer: 'zgkon', platform: 'environment-control-system' }, } //中广控空气控制系统
+]
+```
+
+### 命令列表
+
+1. getAllDevices
+2. getAllBACPresentValues
+
+### 事件列表
+
+1. bacPresentValue
