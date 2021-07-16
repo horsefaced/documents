@@ -6,6 +6,10 @@
 
 启动命令：docker run -d -p 61616:61616 -p 8161:8161 -v artemis:/var/lib/artemis/etc --name artemis --restart=always vromero/activemq-artemis
 
+## Keepalived
+
+启动命令: docker run --cap-add=NET_ADMIN --cap-add=NET_BROADCAST --cap-add=NET_RAW --net=host -d -v keepalived:/container/service/keepalived/assets/ --name keepalived --restart=always osixia/keepalived
+
 ## videoserver
 
 使用端口：58080
@@ -165,6 +169,12 @@
 使用端口: 12200
 
 启动命令: docker run -d --network="host" -v virupaksa:/etc -v virupaksa:/var/log --name zgkon-ecs-server --hostname zgkon-ecs zgkon-ecs-server:latest
+
+## zillion-ecs-server
+
+使用端口: 12210
+
+启动命令: docker run -d --network="host" -v virupaksa:/etc -v virupaksa:/var/log --name zillion-ecs-server --hostname zillion-ecs zillion-ecs-server:latest
 
 ## virupaksa-mock
 

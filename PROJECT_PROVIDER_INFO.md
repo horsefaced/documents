@@ -33,6 +33,7 @@
 | 智能厕所系统   | { sdk: { manufacturer: 'topbeyond', platform: 'toilet'},} |
 | 车辆管理       | 暂无提供                                                  |
 | 门禁管理       | 暂无提供                                                  |
+| 环境监测系统   | {sdk: { manufacturer: 'zillion', platform: 'ecs'}}        |
 
 ## 深圳龙华观澜学校
 

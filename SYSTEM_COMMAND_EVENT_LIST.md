@@ -368,6 +368,7 @@
 ```javascript
 [
   {sdk: { manufacturer: 'zgkon', platform: 'environment-control-system' }, } //中广控空气控制系统
+  {sdk: { manufacturer: 'zillion', platform: 'ecs'}} //智菱环境监测系统
 ]
 ```
 
