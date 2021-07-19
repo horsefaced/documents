@@ -82,6 +82,10 @@
     image?: string; //刷卡时抓拍图
 
     otherImages: Array<string> = [];
+  
+    temperature?: string; //体温
+    temperatureType?: number; //体温类型: 0: 正常, 1: 超温
+    healthCodeType?: string; //健康码类型: (绿码、红码、黄码)
 }
 ```
 
@@ -145,6 +149,9 @@
 
     siteId?: string; //考勤ID
     siteName?: string; //考勤点名称
+    
+    temperature?: string; //体温
+    temperatureType?: number; //体温类型: 0: 正常, 1: 超温
 }
 ```
 
@@ -340,6 +347,8 @@
     sex?: string; //性别
     feature?: string; //特征值
     featureString?: string; //特征值
+    temperature?: string; //体温
+    temperatureType?: number; //体温类型: 0: 正常, 1: 超温
 }
 ```
 
@@ -376,7 +385,8 @@
 
     similarity?: number; //相似度
     featureString?: string; //特征值
-
+    temperature?: string; //体温
+    temperatureType?: number; //体温类型: 0: 正常, 1: 超温
     time?: number; //识别时间
 }
 ```
@@ -1100,5 +1110,24 @@ realData.toiletInfo
 }
 ```
 
+### 人体体温报警
 
+#### 频道名
+
+    realData.humanTemperatureAlarm
+
+#### 承载数据
+
+```javascript
+{
+    deviceCode?: string; //设备编号
+    deviceName?: string; //设备名称
+    time?: number; //报警时间
+    alarmCode?: string; //报警编码
+    status?: number; //报警状态, 1-报警产生, 2-报警消失
+    images?: Array<string>; //现场抓拍图片
+    temperature?: string; //体温
+    temperatureType?: number; //体温类型, 0: 正常; 1: 超温
+}
+```
 

@@ -295,6 +295,9 @@
     image?: string; //刷卡时抓拍图
 
     otherImages: Array<string> = [];
+  
+  	temperature?: string; //体温
+    temperatureType?: number; //体温类型: 0: 正常, 1: 超温
 
     dataSource: string; //子系统名称,
     raw: {} //保存着对应厂家系统回传的原始数据

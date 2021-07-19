@@ -98,6 +98,7 @@
 8. faceSearch 以图搜图, 非常的慢, 非必要不要调用
 
 ##### 事件列表
+
 1. faceDetect
 2. faceRecognition
 3. personFeature
@@ -105,6 +106,7 @@
 5. nonmotorFeature
 6. deviceOnlineStatusChange 
 7. deviceAlarm 设备报警, 推荐直接显示 alarmTypeStr 的内容
+8. humanTemperatureAlarm
 
 ### 海康威视
 
