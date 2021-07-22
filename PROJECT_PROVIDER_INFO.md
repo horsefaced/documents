@@ -41,3 +41,14 @@
 | ------------ | --------------------------------------------------- |
 | 视频监控系统 | { sdk: { manufacturer: 'dahua', platform: 'u8000'}} |
 
+## 山东千佛山医院
+
+| 子系统       | 对应厂家                                                     |
+| ------------ | ------------------------------------------------------------ |
+| 视频监控系统 | { sdk: { manufacturer: 'dahua', platform: 'H8900' } }        |
+| 门禁管理     | [{ sdk: { manufacturer: 'dahua', platform: 'H8900' } }, </br> { sdk: {manufacturer: 'hikvision', platform: 'openapi'}}] |
+| 一键报警     | { sdk: { manufacturer: 'dahua', platform: 'H8900' } }        |
+| 出入口管理   | 暂无提供                                                     |
+| 消防系统     | { sdk: { manufacturer: 'dahua', platform: 'H8900' } }        |
+| 人脸识别     | { sdk: { manufacturer: 'dahua', platform: 'H8900' } }        |
+
