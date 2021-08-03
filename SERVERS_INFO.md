@@ -176,6 +176,10 @@
 
 启动命令: docker run -d --network="host" -v virupaksa:/etc -v virupaksa:/var/log --name zillion-ecs-server --hostname zillion-ecs zillion-ecs-server:latest
 
+## hk-netsdk-acs-server
+
+使用端口: 12220
+
 ## virupaksa-mock
 
 使用端口：12990

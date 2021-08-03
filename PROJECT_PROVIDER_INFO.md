@@ -43,12 +43,16 @@
 
 ## 山东千佛山医院
 
-| 子系统       | 对应厂家                                                |
-| ------------ | ------------------------------------------------------- |
-| 视频监控系统 | { sdk: { manufacturer: 'dahua', platform: 'H8900' } }   |
-| 门禁管理     | [{ sdk: { manufacturer: 'dahua', platform: 'H8900' } }] |
-| 一键报警     | { sdk: { manufacturer: 'dahua', platform: 'H8900' } }   |
-| 出入口管理   | 暂无提供                                                |
-| 消防系统     | { sdk: { manufacturer: 'dahua', platform: 'H8900' } }   |
-| 人脸识别     | { sdk: { manufacturer: 'dahua', platform: 'H8900' } }   |
+1. 门禁管理由两家提供, 分别是大华H8900-2平台与海康的 openapi平台, 其中 H8900-2 平台使用常量与H8900一致, 只为区分来自不同H8900服务器的设备之用.
+2. 消防系统以报警主机形式接入H8900平台, 其deviceUnitType: 4, deviceType: 1, 发出的报警类型为: 82: 火警
+3. 一键报警以报警主机形式接入H8900平台, 其deviceUnitType: 4, deviceType: 1,发现的报警类型需现场确认后提供
+
+| 子系统       | 对应厂家                                                     |
+| ------------ | ------------------------------------------------------------ |
+| 视频监控系统 | { sdk: { manufacturer: 'dahua', platform: 'H8900' } }        |
+| 门禁管理     | { sdk: { manufacturer: 'dahua', platform: 'H8900-2' } }, { sdk: {manufacturer: 'hikvision', platform: 'openapi'}} |
+| 一键报警     | { sdk: { manufacturer: 'dahua', platform: 'H8900' } }        |
+| 出入口管理   | 暂无提供                                                     |
+| 消防系统     | { sdk: { manufacturer: 'dahua', platform: 'H8900' } }        |
+| 人脸识别     | { sdk: { manufacturer: 'dahua', platform: 'H8900' } }        |
 
