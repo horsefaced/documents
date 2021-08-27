@@ -85,7 +85,7 @@
   
     temperature?: string; //体温
     temperatureType?: number; //体温类型: 0: 正常, 1: 超温
-    healthCodeType?: string; //健康码类型: (绿码、红码、黄码)
+    healthCodeType?: string; //健康码类型: (绿码、红码、黄码), 不在前面所列的范围内的都算未知.
 }
 ```
 
