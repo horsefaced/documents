@@ -57,3 +57,12 @@
 | 消防系统     | { sdk: { manufacturer: 'dahua', platform: 'H8900' } }        |
 | 人脸识别     | { sdk: { manufacturer: 'dahua', platform: 'H8900' } }        |
 
+## 宁夏核废料项目
+
+1. 周界报警系统中, 设备的解警类型为:deviceAlarm事件中:  "alarmType":255,"alarmTypeStr":"设备故障恢复", 周界设备收到这个就认为是恢复正常状态.
+
+| 子系统       | 对应厂家                                                |
+| ------------ | ------------------------------------------------------- |
+| 视频监控系统 | { sdk: { manufacturer: 'dahua', platform: 'H8900' } }   |
+| 周界报警     | { sdk: { manufacturer: 'innopro', platform: '8100' } }, |
+| 声音复合系统 | { sdk: { manufacturer: 'asrc', platform: 'asrc' } }     |
