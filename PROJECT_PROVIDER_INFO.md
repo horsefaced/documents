@@ -66,3 +66,13 @@
 | 视频监控系统 | { sdk: { manufacturer: 'dahua', platform: 'H8900' } }   |
 | 周界报警     | { sdk: { manufacturer: 'innopro', platform: '8100' } }, |
 | 声音复合系统 | { sdk: { manufacturer: 'asrc', platform: 'asrc' } }     |
+
+## 上海电力大学项目
+
+
+
+| 子系统       | 对应厂家                                              |
+| ------------ | ----------------------------------------------------- |
+| 视频监控系统 | { sdk: { manufacturer: 'dahua', platform: 'H8900' } } |
+| 单兵指挥系统 | { sdk: { manufacturer: 'dahua', platform: 'x9000'}}   |
+
