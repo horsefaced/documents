@@ -1,6 +1,7 @@
 # 命令接口
 
 ## 调用方法
+
 用户通过命令接口向数据采集平台发送操作命令, 采集平台运行后返回结果.
 
 #### Request
@@ -1558,6 +1559,34 @@ setSceneInArea
 #### 返回数据
 
 没有返回值
+
+### 得到巡更统计信息
+
+#### name
+
+getPatrolRouteStatistics
+
+#### params
+
+```javascript
+{
+  	start: string, //开始时间 (如果不传,则为查询当天的开始时间)
+    end: string, //结束时间 (如果不传,则为查询当天的结束时间)
+}
+```
+
+#### 返回数据
+
+返回巡更路线的统计信息数组
+
+```javascript
+{
+        routeId: string, //路线id 
+        routeName: string, //路线名称
+        scheduleNumber: number = 0, //计划巡更次数
+        actualNumber: number = 0, //实际巡更计数
+}
+```
 
 # 调试用接口
 

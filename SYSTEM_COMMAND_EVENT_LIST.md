@@ -388,3 +388,17 @@
 ### 事件列表
 
 1. bacPresentValue
+
+## 巡更系统
+
+现有平台
+
+```javascript
+[
+  { sdk: { manufacturer: 'dahua', platform: 'icc'}} //大华的openICC系统=
+]
+```
+
+### 命令列表
+
+1. getPatrolRouteStatistics

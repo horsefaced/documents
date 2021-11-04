@@ -24,6 +24,7 @@
   { sdk: { manufacturer: 'topbeyond', platform: 'toilet'},}, //鼎臻智能厕所系统
   { sdk: { manufacturer: 'zgkon', platform: 'environment-control-system' },}, //中广控环境控制系统
   { sdk: { manufacturer: 'zillion', platform: 'ecs'}}, //智菱环境监测系统
+  { sdk: { manufacturer: 'dahua', platform: 'icc'}}, //大华openICC系统
 ]
 ```
 
