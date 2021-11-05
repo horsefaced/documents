@@ -1551,8 +1551,6 @@ setSceneInArea
 {
   		areaCode: string, //区域编码
     	sceneId: string, //场景id
-      
-      
 }
 ```
 
@@ -1583,10 +1581,76 @@ getPatrolRouteStatistics
 {
         routeId: string, //路线id 
         routeName: string, //路线名称
-        scheduleNumber: number = 0, //计划巡更次数
-        actualNumber: number = 0, //实际巡更计数
+        scheduleNumber: number, //计划巡更次数
+        actualNumber: number, //实际巡更次数
+        normalNumber: number, //正常巡更次数
+        abnormalNumber: number, //异常巡更次数
 }
 ```
+
+### 得到巡更班次记录
+
+#### name
+
+getPatrolScheduleRecords
+
+#### params
+
+```javascript
+{
+  	start: string, //开始时间 (如果不传,则为查询当天的开始时间)
+    end: string, //结束时间 (如果不传,则为查询当天的结束时间)
+      routeId: string, //路线id 
+}
+```
+
+#### 返回数据
+
+返回巡更班次信息数组
+
+```javascript
+{
+				scheduleId: string, //巡更班次id
+        ruleId: string, //巡更班次计划id
+        routeId: string, //巡更路线id
+        startTime: number, //巡更班次开始时间
+        endTime: number, //巡更班次结束时间
+        status: number, //巡更班次状态, 1: 待执行、2:正常、3:漏巡、4:未按次序、5:未按间隔、6: 超时、7: 已执行
+        statusStr: string, //巡更班次状态描述
+}
+```
+
+### 得到巡更班次点位记录
+
+#### name
+
+getPatrolSchedulePointRecords
+
+#### params
+
+```javascript
+{
+  scheduleId: string, //巡更班次id
+}
+```
+
+#### 返回数据
+
+返回巡更班次中各个打卡点位的数据数组
+
+```javascript
+{
+				scheduleId: string, //巡更班次id
+        status: number = 1, //点位状态, 1: 待执行(未执行)、2:正常、3:漏巡、4:未按次序、5:未按间隔、6: 超时、7: 已执行
+        statusStr: string = '待执行', //点位状态描述
+        personName?: string, //巡更人员名称
+        checkTime?: number, //定位刷卡时间, 如果没有巡到, 比如漏巡等, 时间则不存在        
+        deviceCode?: string, //点位设备编码·
+        deviceName?: string, //点位设备名称
+}
+```
+
+
 
 # 调试用接口
 
