@@ -401,4 +401,7 @@
 
 ### 命令列表
 
-1. getPatrolRouteStatistics
+1. getAllDevices
+2. getPatrolRouteStatistics
+3. getPatrolScheduleRecords
+4. getPatrolSchedulePointRecords
