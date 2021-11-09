@@ -173,6 +173,7 @@
 [
     { sdk: { manufacturer: 'dahua', platform: 'H8900' } },
     { sdk: {manufacturer: 'hikvision', platform: 'openapi'}}, //海康威视
+    { sdk: {manufacturer: 'dahua', platform: 'icc'}}, //大华openICC系统
 ]
 ```
 ### 命令列表
@@ -194,6 +195,7 @@
 ```javascript
 [
     { sdk: { manufacturer: 'dahua', platform: 'H8900' } },
+  { sdk: {manufacturer: 'hikvision', platform: 'openapi'}}, //海康威视
 ]
 ```
 ### 命令列表
