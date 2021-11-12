@@ -471,7 +471,7 @@
     channelName?: string; //通道号
     deviceName?: string; //设备名
 
-    unitType?: number; //设备单元类型
+    unitType?: number; //设备单元类型c
 }
 ```
 
@@ -481,10 +481,12 @@
     'faceDetectionHistoryRecord'
 
 #### params
+
 ```javascript
 {
     start: string; //开始时间
     end: string; //结束时间
+    device: Device; //需要查询的摄像头设备
 }
 ```
 
@@ -534,6 +536,9 @@
 
     channelId?: string; //通道号
     channelName?: string; //通道名称
+    
+    deviceCode?: string; //设备编号
+    deviceName?: string; //设备名称
 
     personName?:string; //姓名
 
@@ -746,6 +751,10 @@
 
     channelId?: string;//通道号
     channelName?: string;//通道名
+    
+    deviceId?: string;//设备id
+    deviceCode?: string;//设备编码
+    deviceName?: string;//设备名称
 
     groupId?:string; //图片库ID
     groupType?: string; //人脸库类型
