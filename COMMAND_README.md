@@ -5,6 +5,7 @@
 用户通过命令接口向数据采集平台发送操作命令, 采集平台运行后返回结果.
 
 #### Request
+
 - Method: **POST**
 - URL: ```http://ip:port/command```
 - Headers: Content-Type: application/json
@@ -726,7 +727,7 @@
 ```javascript
 {
     image: string, //base64格式的图片,
-    threshold: number, //期望的阈值, 推荐不传, 系统会用默认的,
+    threshold: number, //期望的阈值, 推荐不传, 系统会用默认的, 范围0到100
     start: string; //开始时间,
     end: string; //结束时间
 }
