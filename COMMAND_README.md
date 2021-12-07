@@ -742,7 +742,7 @@
     personCode?: string; //人员编码
     departmentName?: string; //部门名称
 
-    sex?: string; //性别
+    sex?: number; //性别, 1为男2为女, 参考常量文档中性别定义
     nation?: string; //国籍
     bornYear?: string; //出生年月
     age?:number; //年龄
