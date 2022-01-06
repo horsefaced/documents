@@ -72,8 +72,9 @@
 
 
 
-| 子系统       | 对应厂家                                              |
-| ------------ | ----------------------------------------------------- |
-| 视频监控系统 | { sdk: { manufacturer: 'dahua', platform: 'H8900' } } |
-| 单兵指挥系统 | { sdk: { manufacturer: 'dahua', platform: 'x9000'}}   |
+| 子系统                     | 对应厂家                                                    |
+| -------------------------- | ----------------------------------------------------------- |
+| 视频监控系统               | { sdk: { manufacturer: 'dahua', platform: 'H8900' } }       |
+| 单兵指挥系统               | { sdk: { manufacturer: 'dahua', platform: 'x9000'}}         |
+| 火灾自动报警及联动控制系统 | { sdk: { manufacturer: 'dahua', platform: 'firefighting' }} |
 

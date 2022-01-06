@@ -43,6 +43,7 @@
 1. bacPresentValue 窗帘控制器设备的当前状态
 
 ## 暖通系统
+
 ### 现有平台
 ```javascript
 [
@@ -53,7 +54,7 @@
 ### 命令列表
 1. getAllDevices
 2. getAllBACPresentValue 得到暖通设备的当前值, 根据不同设备有不同的值, 参考常量文档中的bacPresentValue一节的说明
-3. basControl
+3. bacControl
 
 ### 事件列表
 

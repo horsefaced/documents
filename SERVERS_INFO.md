@@ -186,6 +186,12 @@
 
 启动命令: docker run -d --network="host" -v virupaksa:/etc -v virupaksa:/var/log --name dh-icc-server --hostname dh-icc dh-icc-server:latest
 
+## sjff119-modbus-server
+
+使用端口: 12240
+
+启动命令: docker run -d --network="host"  -v virupaksa:/etc -v virupaksa:/var/log --name sjff119-modbus --hostname sjff119-modbus sjff119-modbus-server:latest
+
 ## virupaksa-mock
 
 使用端口：12990
