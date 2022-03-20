@@ -56,7 +56,8 @@
 | 消防水压监控 | 暂无提供                                                     |
 | 消防系统     | { sdk: { manufacturer: 'dahua', platform: 'H8900' } }        |
 | 人脸识别     | { sdk: { manufacturer: 'dahua', platform: 'H8900' } }        |
-| 巡更系统     | { sdk: { manufacturer: 'dahua', platform: 'icc'}}            |
+| 巡更系统     | { sdk: { manufacturer: 'dahua', platform: 'icc' }}           |
+| 安检系统     | { sdk: { manufacturer: 'dahua', platform: 'scs' }}           |
 
 ## 宁夏核废料项目
 

@@ -265,6 +265,7 @@
 [
     { sdk: { manufacturer: 'dahua', platform: 'H8900'}},
     { sdk: { manufacturer: 'hikvision', platform: 'openapi'}},
+	  { sdk: {manufacturer: 'dahua', platform: 'scs'}} 
 ]
 ```
 ### 命令列表
@@ -408,3 +409,22 @@
 2. getPatrolRouteStatistics
 3. getPatrolScheduleRecords
 4. getPatrolSchedulePointRecords
+
+## 安检系统
+
+现有平台
+
+```javascript
+[
+  { sdk: {manufacturer: 'dahua', platform: 'scs'}} //大华安检系统
+]
+```
+
+### 命令列表
+
+1. getAllDevices
+2. getSecurityPackageCountStatistics
+3. getSecurityContrabandPackageCountStatistics
+4. getSecurityPackageSecuritySafeRateStatistics
+5. getSecurityPackageCategoryStatistics
+6. getSecurityEventDealStatistics

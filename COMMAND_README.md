@@ -280,7 +280,7 @@
     deviceCode?: string;  //设备编码
     deviceName?: string;  //设备名称
 
-    enterOrExit?:number; //刷卡是出还是入
+    enterOrExit?:number; //刷卡是出还是入 0: 未知 1: 进门, 2:出门
     openResult?:boolean;   //开门结果
     openType?:number; //开门类型
     openTypeStr?: string; //开门类型说明
@@ -1661,6 +1661,147 @@ getPatrolSchedulePointRecords
         deviceName?: string, //点位设备名称
 }
 ```
+
+### 得到安检包裹数量统计
+
+#### name
+
+getSecurityPackageCountStatistics
+
+#### params
+
+```javascript
+{
+  	type: number, //统计类型, 0:日统计, 1:周统计, 2:月统计, 3: 年统计
+    start: string, //开始时间
+    end: stirng, //结束时间
+}
+```
+
+1. 统计类型为0, 日统计时, start与end为需要统计的当天的起止时间, 返回的结果中的time为当天整点
+2. 统计类型为1, 周统计时, start与end为需要统计的周的起止时间, 返回的结果中的time为start与end时间范围内的每天的0点
+3. 统计类型为2, 月统计时, start与end为需要统计的月的起止时间, 返回的结果中的time为start与end时间范围内的每天的0点
+4. 统计类型为3, 年统计时, start与end为需要统计的年的起止时间, 返回的结果中的time为start与end时间范围内的每月的1号0点
+
+#### 返回数据
+
+```javascript
+{
+  deviceCode: string, //设备编码
+  deviceName: string, //设备名称
+  totalCount: [{      //包裹总数
+  	time: number, //统计数据时间
+    count: number, //数量
+   }],
+}
+```
+
+### 得到安检违禁包裹数量统计
+
+#### name
+
+getSecurityContrabandPackageCountStatistics
+
+#### params
+
+```javascript
+{
+  	type: number, //统计类型, 0:日统计, 1:周统计, 2:月统计, 3: 年统计
+    start: string, //开始时间
+    end: stirng, //结束时间
+}
+```
+
+1. 统计类型为0, 日统计时, start与end为需要统计的当天的起止时间, 返回的结果中的time为当天整点
+2. 统计类型为1, 周统计时, start与end为需要统计的周的起止时间, 返回的结果中的time为start与end时间范围内的每天的0点
+3. 统计类型为2, 月统计时, start与end为需要统计的月的起止时间, 返回的结果中的time为start与end时间范围内的每天的0点
+4. 统计类型为3, 年统计时, start与end为需要统计的年的起止时间, 返回的结果中的time为start与end时间范围内的每月的1号0点
+
+#### 返回数据
+
+```javascript
+{
+  	time: number, //统计数据时间
+    count: number, //数量
+}
+```
+
+### 得到安检包裹检测安全率统计
+
+#### name
+
+getSecurityPackageSecuritySafeRateStatistics
+
+#### params
+
+```javascript
+{
+	  start: string, //开始时间
+    end: string, //结束时间
+}
+```
+
+#### 返回数据
+
+```javascript
+{
+  safePercentages: number, //包裹安全率
+  alarmPercentages: number, //报警率
+}
+```
+
+### 得到安检包裹大类统计
+
+#### name
+
+getSecurityPackageCategoryStatistics
+
+#### params
+
+```javascript
+{
+  start: string, //开始时间
+  end: string, //结束时间
+}
+```
+
+#### 返回数据
+
+```javascript
+{
+  category: number, //包裹大类
+  categoryName: string, //包裹大类名称
+  count: number, //数量
+}
+```
+
+### 得到安检时间处理率统计
+
+#### name
+
+getSecurityEventDealStatistics
+
+#### params
+
+```javascript
+{
+  start: string, //开始时间
+  end: string, //结束时间
+}
+```
+
+#### 返回数据
+
+```javascript
+{
+  dealedCount: number, //已处理事件数量
+  noDealCount: number, //为处理事件数量
+}
+```
+
+
+
+
 
 # 调试用接口
 
