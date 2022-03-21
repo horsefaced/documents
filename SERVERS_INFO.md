@@ -196,7 +196,7 @@
 
 使用端口: 12250
 
-
+启动命令: docker run -d --network="host" -v virupaksa:/etc -v virupaksa:/var/log --name dh-scs-server --hostname dh-scs --restart=always dh-scs-server:latest
 
 ## virupaksa-mock
 

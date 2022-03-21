@@ -1678,7 +1678,7 @@ getSecurityPackageCountStatistics
 }
 ```
 
-1. 统计类型为0, 日统计时, start与end为需要统计的当天的起止时间, 返回的结果中的time为当天整点
+1. 统计类型为0, 日统计时, start与end为需要统计的当天的起止时间, 返回的结果中的time为当天24个整点
 2. 统计类型为1, 周统计时, start与end为需要统计的周的起止时间, 返回的结果中的time为start与end时间范围内的每天的0点
 3. 统计类型为2, 月统计时, start与end为需要统计的月的起止时间, 返回的结果中的time为start与end时间范围内的每天的0点
 4. 统计类型为3, 年统计时, start与end为需要统计的年的起止时间, 返回的结果中的time为start与end时间范围内的每月的1号0点
@@ -1687,12 +1687,8 @@ getSecurityPackageCountStatistics
 
 ```javascript
 {
-  deviceCode: string, //设备编码
-  deviceName: string, //设备名称
-  totalCount: [{      //包裹总数
   	time: number, //统计数据时间
     count: number, //数量
-   }],
 }
 ```
 
@@ -1712,7 +1708,7 @@ getSecurityContrabandPackageCountStatistics
 }
 ```
 
-1. 统计类型为0, 日统计时, start与end为需要统计的当天的起止时间, 返回的结果中的time为当天整点
+1. 统计类型为0, 日统计时, start与end为需要统计的当天的起止时间, 返回的结果中的time为当天24个整点
 2. 统计类型为1, 周统计时, start与end为需要统计的周的起止时间, 返回的结果中的time为start与end时间范围内的每天的0点
 3. 统计类型为2, 月统计时, start与end为需要统计的月的起止时间, 返回的结果中的time为start与end时间范围内的每天的0点
 4. 统计类型为3, 年统计时, start与end为需要统计的年的起止时间, 返回的结果中的time为start与end时间范围内的每月的1号0点
