@@ -1132,3 +1132,52 @@ realData.toiletInfo
 }
 ```
 
+### 安检机报警
+
+#### 频道名
+
+```javascript
+realData.securityMachineAlarm
+```
+
+#### 承载数据
+
+```javascript
+{
+    alarmId: string, //原始报警记录ID
+    deviceCode: string, //设备编号
+    deviceName: string, //设备名称
+    time: number, //报警时间
+    objects: [{ // 报警物品类型
+        category: number; //报警物品大类
+        categoryName: string; //报警物品大类名称
+    }], 
+    images: string[], //报警图片url
+    level: number, //报警等级
+    dealStatus: number, //处理状态 
+}
+```
+
+### 安检门报警
+
+#### 频道名
+
+```javascript
+realData.securityDoorAlarm
+```
+
+#### 承载数据
+
+```javascript
+{
+    alarmId: string, //原始报警记录ID
+    deviceCode: string, //设备编号
+    deviceName: string, //设备名称
+    direction: number, //出入方向 0: 未知, 1: 进门, 2: 出门
+    time: number, //报警时间
+    images: string[], //报警图片url
+    level: number, //报警等级
+    dealStatus: number, //处理状态
+}
+```
+
