@@ -428,3 +428,11 @@
 4. getSecurityPackageSecuritySafeRateStatistics
 5. getSecurityPackageCategoryStatistics
 6. getSecurityEventDealStatistics
+6. getSecurityDoorAlarmCountStatistics
+6. getSecurityDoorPersonCountStatistics
+
+### 事件列表
+
+1. deviceOnlineStatusChange
+2. securityMachineAlarm
+3. securityDoorAlarm

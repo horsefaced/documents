@@ -1154,7 +1154,7 @@ realData.securityMachineAlarm
     }], 
     images: string[], //报警图片url
     level: number, //报警等级 参考常量文档中的报警等级
-    dealStatus: number, //处理状态 
+    dealStatus: number, //处理状态 参考常量文档中的处理状态
 }
 ```
 
@@ -1177,7 +1177,7 @@ realData.securityDoorAlarm
     time: number, //报警时间
     images: string[], //报警图片url
     level: number, //报警等级 参考常量文档中的报警等级
-    dealStatus: number, //处理状态
+    dealStatus: number, //处理状态 参考常量文档中的处理状态
 }
 ```
 

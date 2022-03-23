@@ -1771,7 +1771,67 @@ getSecurityPackageCategoryStatistics
 }
 ```
 
-### 得到安检时间处理率统计
+### 得到安检门报警数量统计
+
+#### name
+
+getSecurityDoorAlarmCountStatistics
+
+#### params
+
+```javascript
+{
+  	type: number, //统计类型, 0:日统计, 1:周统计, 2:月统计, 3: 年统计
+    start: string, //开始时间
+    end: stirng, //结束时间
+}
+```
+
+1. 统计类型为0, 日统计时, start与end为需要统计的当天的起止时间, 返回的结果中的time为当天24个整点
+2. 统计类型为1, 周统计时, start与end为需要统计的周的起止时间, 返回的结果中的time为start与end时间范围内的每天的0点
+3. 统计类型为2, 月统计时, start与end为需要统计的月的起止时间, 返回的结果中的time为start与end时间范围内的每天的0点
+4. 统计类型为3, 年统计时, start与end为需要统计的年的起止时间, 返回的结果中的time为start与end时间范围内的每月的1号0点
+
+#### 返回数据
+
+```javascript
+{
+  	time: number, //统计数据时间
+    count: number, //数量
+}
+```
+
+### 得到安检门过人数量统计
+
+#### name
+
+getSecurityDoorPersonCountStatistics
+
+#### params
+
+```javascript
+{
+  	type: number, //统计类型, 0:日统计, 1:周统计, 2:月统计, 3: 年统计
+    start: string, //开始时间
+    end: stirng, //结束时间
+}
+```
+
+1. 统计类型为0, 日统计时, start与end为需要统计的当天的起止时间, 返回的结果中的time为当天24个整点
+2. 统计类型为1, 周统计时, start与end为需要统计的周的起止时间, 返回的结果中的time为start与end时间范围内的每天的0点
+3. 统计类型为2, 月统计时, start与end为需要统计的月的起止时间, 返回的结果中的time为start与end时间范围内的每天的0点
+4. 统计类型为3, 年统计时, start与end为需要统计的年的起止时间, 返回的结果中的time为start与end时间范围内的每月的1号0点
+
+#### 返回数据
+
+```javascript
+{
+  	time: number, //统计数据时间
+    count: number, //数量
+}
+```
+
+### 得到安检事件处理率统计
 
 #### name
 
