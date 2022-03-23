@@ -1181,3 +1181,22 @@ realData.securityDoorAlarm
 }
 ```
 
+### 安检门过人数量通知
+
+#### 频道名
+
+```javascirpt
+realData.securityDoorPeoplePassInfo
+```
+
+#### 承载数据
+
+```javascript
+{
+  deviceCode: string, //设备编码
+  deviceName: string, //设备名称
+  totalCount: number, //当天到time所在时间, 该设备总过人数量
+  time: number, //时间
+}
+```
+
