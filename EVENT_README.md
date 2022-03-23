@@ -1153,7 +1153,7 @@ realData.securityMachineAlarm
         categoryName: string; //报警物品大类名称
     }], 
     images: string[], //报警图片url
-    level: number, //报警等级
+    level: number, //报警等级 参考常量文档中的报警等级
     dealStatus: number, //处理状态 
 }
 ```
@@ -1176,7 +1176,7 @@ realData.securityDoorAlarm
     direction: number, //出入方向 0: 未知, 1: 进门, 2: 出门
     time: number, //报警时间
     images: string[], //报警图片url
-    level: number, //报警等级
+    level: number, //报警等级 参考常量文档中的报警等级
     dealStatus: number, //处理状态
 }
 ```
