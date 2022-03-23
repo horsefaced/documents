@@ -47,7 +47,7 @@
 2. 消防系统以报警主机形式接入H8900平台, 其deviceUnitType: 4, deviceType: 1, 发出的报警类型为: 82: 火警
 3. 一键报警以报警主机形式接入H8900平台, 其deviceUnitType: 4, deviceType: 1,发现的报警类型为: 81: 报警主机报警
 4. 安检系统报警等级现有最高到3级, 0级不认为是报警
-5. 因为现场安检门的统计数据不会上传, 会造成如下接口无法提供数据
+5. 因为现场安检门的统计数据不会上传, 会造成如下接口无法提供数据, 从而使安检门报警统计需要我们自己通过报警来进行统计.
    1. getSecurityDoorAlarmCountStatistics
    2. getSecurityDoorPersonCountStatistics
 
