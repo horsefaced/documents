@@ -1765,7 +1765,7 @@ getSecurityPackageCategoryStatistics
 
 ```javascript
 {
-  category: number, //包裹大类
+  category: number, //包裹大类，参考常量文档安检包裹类型
   categoryName: string, //包裹大类名称
   count: number, //数量
 }

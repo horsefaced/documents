@@ -1149,7 +1149,7 @@ realData.securityMachineAlarm
     deviceName: string, //设备名称
     time: number, //报警时间
     objects: [{ // 报警物品类型
-        category: number; //报警物品大类
+        category: number; //报警物品大类，参考常量文档中的安检包裹大类
         categoryName: string; //报警物品大类名称
     }], 
     images: string[], //报警图片url
