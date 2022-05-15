@@ -162,19 +162,19 @@
 
 使用端口: 12190
 
-启动命令: docker run -d --network="host" -v virupaksa:/etc -v virupaksa:/var/log --name topbeyond-toilet-server --hostname topbeyond-toilet topbeyond-toilet-server:latest
+启动命令: docker run -d --network="host" -v virupaksa:/etc -v virupaksa:/var/log --name topbeyond-toilet-server --hostname topbeyond-toilet --restart=always topbeyond-toilet-server:latest
 
 ## zgkon-ecs-server
 
 使用端口: 12200
 
-启动命令: docker run -d --network="host" -v virupaksa:/etc -v virupaksa:/var/log --name zgkon-ecs-server --hostname zgkon-ecs zgkon-ecs-server:latest
+启动命令: docker run -d --network="host" -v virupaksa:/etc -v virupaksa:/var/log --name zgkon-ecs-server --hostname zgkon-ecs --restart=always zgkon-ecs-server:latest
 
 ## zillion-ecs-server
 
 使用端口: 12210
 
-启动命令: docker run -d --network="host" -v virupaksa:/etc -v virupaksa:/var/log --name zillion-ecs-server --hostname zillion-ecs zillion-ecs-server:latest
+启动命令: docker run -d --network="host" -v virupaksa:/etc -v virupaksa:/var/log --name zillion-ecs-server --hostname zillion-ecs --restart=always zillion-ecs-server:latest
 
 ## hk-netsdk-acs-server
 
@@ -184,13 +184,13 @@
 
 使用端口: 12230
 
-启动命令: docker run -d --network="host" -v virupaksa:/etc -v virupaksa:/var/log --name dh-icc-server --hostname dh-icc dh-icc-server:latest
+启动命令: docker run -d --network="host" -v virupaksa:/etc -v virupaksa:/var/log --name dh-icc-server --hostname dh-icc --restart=always dh-icc-server:latest
 
 ## sjff119-modbus-server
 
 使用端口: 12240
 
-启动命令: docker run -d --network="host"  -v virupaksa:/etc -v virupaksa:/var/log --name sjff119-modbus --hostname sjff119-modbus sjff119-modbus-server:latest
+启动命令: docker run -d --network="host"  -v virupaksa:/etc -v virupaksa:/var/log --name sjff119-modbus --hostname sjff119-modbus --restart=always sjff119-modbus-server:latest
 
 ## dh-scs-server
 
