@@ -1158,6 +1158,30 @@ realData.securityMachineAlarm
 }
 ```
 
+### 液体检测报警
+
+#### 频道名
+
+```javascript
+realData.securityLiquidAlarm
+```
+
+#### 承载数据
+
+```javascript
+{
+    alarmId: string, //原始报警记录ID
+    deviceCode: string, //设备编号
+    deviceName: string, //设备名称
+    time: number, //报警时间
+    containerType: number, //容器类型 1:金属、2:非金属
+    level: number, //报警等级
+    dealStatus: number, //处理状态
+}
+```
+
+
+
 ### 安检门报警
 
 #### 频道名

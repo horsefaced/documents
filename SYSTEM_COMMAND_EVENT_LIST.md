@@ -437,3 +437,4 @@
 2. securityMachineAlarm
 3. securityDoorAlarm
 4. securityDoorPeoplePassInfo
+4. securityLiquidAlarm
