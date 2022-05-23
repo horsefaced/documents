@@ -1174,7 +1174,7 @@ realData.securityLiquidAlarm
     deviceCode: string, //设备编号
     deviceName: string, //设备名称
     time: number, //报警时间
-    containerType: number, //容器类型 1:金属、2:非金属
+    containerType: number, //容器类型 0: 未知、1:金属、2:非金属
     level: number, //报警等级
     dealStatus: number, //处理状态
 }
